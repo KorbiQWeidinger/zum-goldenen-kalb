@@ -16,6 +16,10 @@ function App() {
         className="logo w-2/3 mx-32 mt-8 z-20"
         alt="Zum Goldenen Kalb"
       />
+      <div className="h-0.5 my-8 w-2/3 bg-white z-20" />
+      <button className="text-2xl w-48 h-16 bg-transparent border-2 border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20">
+        Reservieren
+      </button>
     </div>
   );
 }
