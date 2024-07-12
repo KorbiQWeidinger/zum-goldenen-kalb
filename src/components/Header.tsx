@@ -14,7 +14,7 @@ const Button = ({
   return (
     <button
       onClick={onClick}
-      className="text-md font-medium text-white hover:text-gold-500 transition-all duration-300 lg:hover:border-t-4 hover:border-t-gold-500 md:hover:bg-white md:hover:bg-opacity-15 w-full lg:w-auto flex items-center justify-center h-24"
+      className="text-md font-medium text-white hover:text-gold-500 transition-all duration-300 lg:hover:border-t-4 hover:border-t-gold-500 md:hover:bg-white md:hover:bg-opacity-15 w-full lg:w-auto lg:px-4 flex items-center justify-center h-24"
     >
       {label}
     </button>
@@ -79,7 +79,7 @@ const Header = () => {
               </div>
 
               {/* Desktop Buttons */}
-              <div className="hidden lg:flex flex-1 justify-end space-x-6 items-stretch">
+              <div className="hidden lg:flex flex-1 justify-end items-stretch">
                 <Button label="HOME" onClick={() => navigate("/")} />
                 <Button label="ABOUT" />
                 <Button label="MENU" />
@@ -106,7 +106,7 @@ const Header = () => {
           </button>
           <img
             src={"/zum-goldenen-kalb/kalb-head-gold.png"}
-            className="h-32 my-10 transition-all duration-300"
+            className="h-32 my-10 mr-2 transition-all duration-300"
             alt="Logo"
           />
           <Button
@@ -136,7 +136,7 @@ const SocialIcons = () => (
   <>
     <a
       href="https://www.instagram.com/zumgoldenenkalb/"
-      className="pl-8 w-8 flex items-center justify-center h-24 hover:text-gold-500 transition-colors duration-300"
+      className="mr-5 pl-8 w-8 flex items-center justify-center h-24 hover:text-gold-500 transition-colors duration-300"
     >
       <FontAwesomeIcon icon={faInstagram} size="xl" />
     </a>
