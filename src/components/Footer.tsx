@@ -10,11 +10,20 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="text-xs">
-          © 2018 Zum Goldenen Kalb |{" "}
+        <div className="text-xs text-center">
+          © 2024 Zum Goldenen Kalb |{" "}
           <a href="/impressum" className="hover:underline">
             Impressum
           </a>
+          <p className="mt-2">
+            <a
+              href="https://korbiqweidinger.github.io/"
+              className="hover:underline"
+              target="_blank"
+            >
+              Created with ♡ by Korbi
+            </a>
+          </p>
         </div>
 
         {/* Opening Hours */}
