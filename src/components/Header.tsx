@@ -1,14 +1,30 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
+
 const Header = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <header className="bg-black bg-opacity-60 text-white fixed top-0 left-0 right-0 z-50">
       <div className="mx-auto px-16">
         <div className="flex justify-between items-center py-1 h-24">
           <div className="flex justify-start lg:flex-1">
-            <img
-              src={"/zum-goldenen-kalb/kalb-head-gold.svg"}
-              className="h-24 w-24"
-              alt="Vite logo"
-            />
+            <a
+              href="/"
+              className="flex justify-start lg:flex-1 cursor-pointer"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <img
+                src={"/zum-goldenen-kalb/kalb-head-gold.svg"}
+                className="h-24 w-24 transition-all duration-300"
+                alt="Vite logo"
+                style={{
+                  filter: isHovered ? "drop-shadow(0 0 3px #FFD700)" : "none",
+                }}
+              />
+            </a>
           </div>
 
           {/* Buttons on the right with hover effect */}
@@ -17,6 +33,19 @@ const Header = () => {
             <Button label="ABOUT" />
             <Button label="MENU" />
             <Button label="RESERVIERUNG" />
+            {/* Social Media Icons */}
+            <a
+              href="https://www.instagram.com/zumgoldenenkalb/"
+              className="pl-8 w-8 flex items-center justify-center h-24 hover:text-gold-500 transition-colors duration-300"
+            >
+              <FontAwesomeIcon icon={faInstagram} size="xl" />
+            </a>
+            <a
+              href="https://www.facebook.com/zum.goldenen.kalb/"
+              className="flex w-8 items-center justify-center h-24 hover:text-gold-500 transition-colors duration-300"
+            >
+              <FontAwesomeIcon icon={faFacebookF} size="xl" />
+            </a>
           </div>
         </div>
       </div>
