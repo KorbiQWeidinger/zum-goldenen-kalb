@@ -27,9 +27,9 @@ export function Reservations() {
             <QuandooBookingWidget />
           </div>
           <div className="flex-1 font-playfair italic text-xl text-center md:text-left">
-            Online können nur Tische bis 5 Personen reserviert werden.
+            Online können nur Tische bis 6 Personen reserviert werden.
             <Spacer size="md" />
-            Tische ab 6 Personen bitte telefonisch reservieren unter
+            Tische ab 7 Personen bitte telefonisch reservieren unter
             <Spacer size="md" />
             <a href="tel:+498923542290" className="text-l">
               +49 89 2354 2290

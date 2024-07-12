@@ -52,9 +52,9 @@ export function Main() {
         />
         <MenuButton />
       </div>
-      <div className="bg-black text-white my-16 p-16 text-center">
+      <div className="bg-black text-white my-32 text-center">
         <BlockHeader
-          label="Buchen Sie gleich ihren Tisch	"
+          label="Buchen Sie gleich ihren Tisch"
           header="RESERVIERUNG"
         />
         <div className="flex flex-col justify-center items-center">
