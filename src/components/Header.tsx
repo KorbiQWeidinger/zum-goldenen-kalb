@@ -17,8 +17,8 @@ const Header = () => {
               onMouseLeave={() => setIsHovered(false)}
             >
               <img
-                src={"/zum-goldenen-kalb/kalb-head-gold.svg"}
-                className="h-24 w-24 transition-all duration-300"
+                src={"/zum-goldenen-kalb/kalb-head-gold.png"}
+                className="h-20 transition-all duration-300"
                 alt="Vite logo"
                 style={{
                   filter: isHovered ? "drop-shadow(0 0 3px #FFD700)" : "none",
