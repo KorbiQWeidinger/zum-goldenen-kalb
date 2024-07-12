@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { BlockHeader } from "../components/BlockHeader";
 import { Footer } from "../components/Footer";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 import { MenuButton } from "../components/MenuButton";
 import RotatingTextComponent from "../components/RoatatingText";
 
@@ -21,10 +21,10 @@ export function Main() {
 
         <img
           src={"/zum-goldenen-kalb/kalb-text.png"}
-          className="logo w-2/3 mx-32 mt-8 z-20"
+          className="logo w-full px-4 md:px-0 md:w-2/3 mx-32 mt-8 z-20"
           alt="Zum Goldenen Kalb"
         />
-        <div className="h-0.5 my-8 w-2/3 bg-white z-20" />
+        <div className="h-0.5 my-8 w-4/5 md:w-2/3 bg-white z-20" />
         <button
           onClick={() => navigate("/reservations")}
           className="text-2xl w-48 h-16 bg-transparent border-2 border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
@@ -32,7 +32,10 @@ export function Main() {
           Reservieren
         </button>
       </div>
-      <div className="bg-black text-white my-16 p-16 text-center">
+      <div
+        id="about"
+        className="bg-black text-white py-28 px-4 md:px-16 text-center"
+      >
         <BlockHeader
           label="Grilled on HaJaTec's charcoal grill"
           header="FINEST STEAK & MORE"
@@ -43,7 +46,7 @@ export function Main() {
         style={{
           backgroundImage: "url('/zum-goldenen-kalb/kalb-tables.jpg')",
         }}
-        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen py-24"
+        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen py-28 px-4 md:px-16 text-center"
       >
         <div className="absolute inset-0 bg-black opacity-50 z-10" />
         <BlockHeader
@@ -52,7 +55,7 @@ export function Main() {
         />
         <MenuButton />
       </div>
-      <div className="bg-black text-white my-32 text-center">
+      <div className="bg-black text-white py-28 px-4 md:px-16 text-center">
         <BlockHeader
           label="Buchen Sie gleich ihren Tisch"
           header="RESERVIERUNG"
