@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="bg-black bg-opacity-60 text-white fixed top-0 left-0 right-0 z-10">
+    <header className="bg-black bg-opacity-60 text-white fixed top-0 left-0 right-0 z-50">
       <div className="mx-auto px-16">
         <div className="flex justify-between items-center py-1 h-24">
           <div className="flex justify-start lg:flex-1">

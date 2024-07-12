@@ -5,8 +5,11 @@ export default {
     extend: {
       colors: {
         gold: {
-          500: "#DAA520", // Gold color, adjust as needed
+          500: "#DAA520",
         },
+      },
+      fontFamily: {
+        playfair: ['"Playfair Display"', "serif"],
       },
     },
   },
