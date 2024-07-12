@@ -39,7 +39,7 @@ export function Impressum() {
             </p>
             Ferenc Barbay und Markus Kirchberger
             <Spacer size="lg" />
-            Tel.: <a href="tel:+498923542290">+49 (0)/89 23 54 22 90</a> <br />
+            Tel.: <a href="tel:+498923542290">+49 89 2354 2290</a> <br />
             E-Mail: info@zumgoldenenkalb.de <br />
             www: www.zumgoldenenkalb.de
             <Spacer size="lg" />

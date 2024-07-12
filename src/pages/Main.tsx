@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { BlockHeader } from "../components/BlockHeader";
 import { Footer } from "../components/Footer";
 import Header from "../components/header/Header";
-import { MenuButton } from "../components/MenuButton";
 import RotatingTextComponent from "../components/RoatatingText";
 
 export function Main() {
@@ -53,7 +52,12 @@ export function Main() {
           label={"Steak & Entourage"}
           header={"UNSERE SPEISEKARTE"}
         />
-        <MenuButton />
+        <button
+          onClick={() => navigate("/menu")}
+          className="mt-6 text-lg w-24 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
+        >
+          Menu
+        </button>
       </div>
       <div className="bg-black text-white py-28 px-4 md:px-16 text-center">
         <BlockHeader

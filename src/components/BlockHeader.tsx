@@ -1,3 +1,39 @@
+export const DividerWithText = ({
+  label,
+  size,
+}: {
+  label: string;
+  size?: string;
+}) => {
+  return (
+    <div className="flex items-center justify-center px-[5%] md:px-[15%] lg:px-[25%] w-full z-20">
+      <span className="flex-1 border-t border-gray-300"></span>
+      <div
+        className={`mx-2 whitespace-nowrap ${
+          size ? size : "text-sm md:text-md"
+        } font-playfair italic tracking-widest text-gold-500`}
+      >
+        {label}
+      </div>
+      <span className="flex-1 border-t border-gray-300"></span>
+    </div>
+  );
+};
+
+export const DividerWithLogo = () => {
+  return (
+    <div className="flex items-center justify-center px-[5%] md:px-[15%] lg:px-[25%] w-full z-20">
+      <span className="flex-1 border-t border-gray-300"></span>
+      <img
+        src={"/zum-goldenen-kalb/kalb-head-gold.svg"}
+        className="h-12 w-12"
+        alt=""
+      />
+      <span className="flex-1 border-t border-gray-300"></span>
+    </div>
+  );
+};
+
 export function BlockHeader({
   label,
   header,
@@ -9,13 +45,7 @@ export function BlockHeader({
 }) {
   return (
     <>
-      <div className="flex items-center justify-center px-[5%] md:px-[15%] lg:px-[25%] w-full z-20">
-        <span className="flex-1 border-t border-gray-300"></span>
-        <div className="mx-2 whitespace-nowrap text-sm md:text-md font-playfair italic tracking-widest text-gold-500">
-          {label}
-        </div>
-        <span className="flex-1 border-t border-gray-300"></span>
-      </div>
+      <DividerWithText label={label} />
       <h1
         className={`${
           textColor ? textColor : "text-white"
@@ -23,15 +53,7 @@ export function BlockHeader({
       >
         {header}
       </h1>
-      <div className="flex items-center justify-center px-[5%] md:px-[15%] lg:px-[25%] w-full z-20">
-        <span className="flex-1 border-t border-gray-300"></span>
-        <img
-          src={"/zum-goldenen-kalb/kalb-head-gold.svg"}
-          className="h-12 w-12"
-          alt=""
-        />
-        <span className="flex-1 border-t border-gray-300"></span>
-      </div>
+      <DividerWithLogo />
     </>
   );
 }

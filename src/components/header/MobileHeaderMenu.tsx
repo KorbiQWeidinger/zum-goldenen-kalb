@@ -60,7 +60,7 @@ export const MobileHeaderMenu = ({
       <Button
         label="MENU"
         onClick={() => {
-          navigate("/");
+          navigate("/menu");
           toggleMobileMenu();
         }}
       />

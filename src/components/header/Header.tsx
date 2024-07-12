@@ -90,7 +90,7 @@ const Header = () => {
             <div className="hidden lg:flex flex-1 justify-end items-stretch text-white">
               <Button label="HOME" onClick={() => navigate("/")} />
               <Button label="ABOUT" onClick={() => navigate("/")} />
-              <Button label="MENU" onClick={() => navigate("/")} />
+              <Button label="MENU" onClick={() => navigate("/menu")} />
               <Button
                 label="RESERVIERUNG"
                 onClick={() => navigate("/reservations")}
