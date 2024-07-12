@@ -68,7 +68,7 @@ export function Main() {
             Lassen Sie es sich schmecken!
           </div>
           <a href="tel:+498923542290" className="text-lg text-white">
-            Tel.: +49 (0)/89 23 54 22 90
+            Tel.: +49 89 2354 2290
           </a>
         </div>
         <button

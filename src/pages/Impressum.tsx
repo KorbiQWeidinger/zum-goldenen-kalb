@@ -30,8 +30,8 @@ export function Impressum() {
             USt.-Id. Nr.: auf Anfrage
             <Spacer size="lg" />
             <p className="font-semibold">Öffnungszeiten: </p>
-            Di – Sa: 17:00 Uhr – 01:00 Uhr <br />
-            Samstags bei schönem Wetter Terrassenbetrieb ab 12:00 Uhr <br />
+            Di – Fr: 17:00 Uhr – 01:00 Uhr <br />
+            Samstags ab 12:00 Uhr <br />
             Sonntag und Montag Ruhetag
             <Spacer size="lg" />
             <p className="font-semibold">
@@ -39,7 +39,7 @@ export function Impressum() {
             </p>
             Ferenc Barbay und Markus Kirchberger
             <Spacer size="lg" />
-            Tel.: +49 (0)/89/23 54 22 90 <br />
+            Tel.: <a href="tel:+498923542290">+49 (0)/89 23 54 22 90</a> <br />
             E-Mail: info@zumgoldenenkalb.de <br />
             www: www.zumgoldenenkalb.de
             <Spacer size="lg" />

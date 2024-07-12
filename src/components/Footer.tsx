@@ -25,7 +25,10 @@ export function Footer() {
         {/* Copyright */}
         <div className="text-xs text-center order-3 md:order-2 mt-4 md:mt-0">
           © 2024 Zum Goldenen Kalb |{" "}
-          <a className="hover:underline" onClick={() => navigate("/impressum")}>
+          <a
+            className="hover:underline hover:cursor-pointer"
+            onClick={() => navigate("/impressum")}
+          >
             Impressum
           </a>
           <p className="md:mt-2">
@@ -43,7 +46,8 @@ export function Footer() {
         {/* Opening Hours */}
         <div className="text-sm text-center order-1 md:order-3">
           <p className="mb-0.5 md:mb-1">ÖFFNUNGSZEITEN:</p>
-          <p>DI – SA: 17:00 – 01:00 Uhr</p>
+          <p className="mb-0.5 md:mb-1">DI – FR: 17:00 – 01:00 Uhr</p>
+          <p>SA: 12:00 – 01:00 Uhr</p>
         </div>
       </div>
     </footer>

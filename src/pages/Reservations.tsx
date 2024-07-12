@@ -38,8 +38,9 @@ export function Reservations() {
             erfragen. Wir planen für Euren Besuch 2 1/2 Stunden ein.
             Reservierungen ab 20:00 Uhr sind zeitlich nicht begrenzt.
             <Spacer size="lg" />
-            Öffnungszeiten: Dienstag – Samstag von 17:00 Uhr bis 01:00 Uhr.
-            Samstags bei schönem Wetter Terrassenbetrieb ab 12:00 Uhr.
+            Öffnungszeiten: <br />
+            Dienstag – Samstag von 17:00 Uhr bis 01:00 Uhr. Samstags ab 12:00
+            Uhr.
             <Spacer size="lg" />
             Wir freuen uns auf Euren Besuch.
             <Spacer size="md" />
