@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="bg-black bg-opacity-60 text-white fixed top-0 left-0 right-0 z-50">
@@ -15,6 +17,7 @@ const Header = () => {
               className="flex justify-start lg:flex-1 cursor-pointer"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
+              onClick={() => navigate("/")}
             >
               <img
                 src={"/zum-goldenen-kalb/kalb-head-gold.png"}
@@ -29,10 +32,13 @@ const Header = () => {
 
           {/* Buttons on the right with hover effect */}
           <div className="flex-1 flex justify-end space-x-6 items-stretch">
-            <Button label="HOME" />
+            <Button label="HOME" onClick={() => navigate("/")} />
             <Button label="ABOUT" />
             <Button label="MENU" />
-            <Button label="RESERVIERUNG" />
+            <Button
+              label="RESERVIERUNG"
+              onClick={() => navigate("/reservations")}
+            />
             {/* Social Media Icons */}
             <a
               href="https://www.instagram.com/zumgoldenenkalb/"
@@ -53,9 +59,18 @@ const Header = () => {
   );
 };
 
-const Button = ({ label }: { label: string }) => {
+const Button = ({
+  label,
+  onClick,
+}: {
+  label: string;
+  onClick?: () => void;
+}) => {
   return (
-    <button className="text-md font-medium text-white hover:text-gold-500 transition-all duration-300 hover:border-t-4 hover:border-t-gold-500 flex items-center justify-center h-24">
+    <button
+      onClick={onClick}
+      className="text-md font-medium text-white hover:text-gold-500 transition-all duration-300 hover:border-t-4 hover:border-t-gold-500 flex items-center justify-center h-24"
+    >
       {label}
     </button>
   );
