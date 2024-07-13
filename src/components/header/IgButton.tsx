@@ -8,6 +8,8 @@ export function IgButton({ size }: { size: SizeProp }) {
       href="https://www.instagram.com/zumgoldenenkalb/"
       className="flex items-center justify-center hover:text-gold-500 transition-colors duration-300"
       aria-label="Instagram"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <FontAwesomeIcon icon={faInstagram} size={size} />
     </a>

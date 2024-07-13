@@ -58,8 +58,7 @@ const Header = () => {
           <div className="flex justify-between items-center py-1 h-24">
             {/* Logo and hamburger menu */}
             <div className="flex justify-between lg:justify-start lg:flex-1 w-full">
-              <a
-                href="/"
+              <div
                 className="cursor-pointer"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
@@ -73,7 +72,7 @@ const Header = () => {
                     filter: isHovered ? "drop-shadow(0 0 3px #FFD700)" : "none",
                   }}
                 />
-              </a>
+              </div>
               <button
                 className="lg:hidden text-white"
                 onClick={toggleMobileMenu}
