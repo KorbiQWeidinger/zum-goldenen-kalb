@@ -1,10 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import { Fire } from "./fire/Fire";
 
 export function Footer() {
   const navigate = useNavigate();
 
   return (
-    <footer className="bg-gold-500 text-black py-8 px-16">
+    <footer className="bg-black text-gold-500 py-8 px-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Address */}
         <div className="text-sm text-center order-2 md:order-1 mt-4 md:mt-0">
@@ -51,5 +52,27 @@ export function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+export function FooterWithFire() {
+  const array = Array.from({ length: 20 }, (_, index) => index);
+
+  return (
+    <div className="relative">
+      <div className="relative w-full h-32 z-0 -ml-36">
+        {array.map((_, index) => (
+          <div
+            className="absolute top-0 left-0"
+            style={{ transform: `translateX(${index * 120}px)` }}
+          >
+            <Fire />
+          </div>
+        ))}
+      </div>
+      <div className="absolute top-36 left-0 w-full z-10">
+        <Footer />
+      </div>
+    </div>
   );
 }

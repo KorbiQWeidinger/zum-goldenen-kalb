@@ -4,4 +4,6 @@
 
 body {
   background-color: #000000;
+  max-width: 100vw;
+  overflow-x: hidden;
 }

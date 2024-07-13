@@ -1,15 +1,21 @@
 export const DividerWithText = ({
   label,
   size,
+  px,
 }: {
   label: string;
   size?: string;
+  px?: string;
 }) => {
   return (
-    <div className="flex items-center justify-center px-[5%] md:px-[15%] lg:px-[25%] w-full z-20">
+    <div
+      className={`flex items-center justify-center ${
+        px ? px : "px-[5%] md:px-[15%] lg:px-[25%]"
+      } w-full z-20`}
+    >
       <span className="flex-1 border-t border-gray-300"></span>
       <div
-        className={`mx-2 whitespace-nowrap ${
+        className={`mx-2 ${
           size ? size : "text-sm md:text-md"
         } font-playfair italic tracking-widest text-gold-500`}
       >
