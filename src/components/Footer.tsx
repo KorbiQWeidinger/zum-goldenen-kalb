@@ -56,7 +56,7 @@ export function Footer() {
 }
 
 export function FooterWithFire() {
-  const array = Array.from({ length: 20 }, (_, index) => index);
+  const array = Array.from({ length: 25 }, (_, index) => index);
 
   return (
     <div className="relative">
