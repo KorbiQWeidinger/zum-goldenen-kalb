@@ -65,7 +65,7 @@ const Header = () => {
                 onClick={() => navigate("/")}
               >
                 <img
-                  src={"/zum-goldenen-kalb/kalb-head-gold.png"}
+                  src={"/kalb-head-gold.png"}
                   className="h-20 transition-all duration-300"
                   alt="Logo"
                   style={{

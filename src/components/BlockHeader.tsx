@@ -30,11 +30,7 @@ export const DividerWithLogo = () => {
   return (
     <div className="flex items-center justify-center px-[5%] md:px-[15%] lg:px-[25%] w-full z-20">
       <span className="flex-1 border-t border-gray-300"></span>
-      <img
-        src={"/zum-goldenen-kalb/kalb-head-gold.svg"}
-        className="h-12 w-12"
-        alt=""
-      />
+      <img src={"/kalb-head-gold.svg"} className="h-12 w-12" alt="" />
       <span className="flex-1 border-t border-gray-300"></span>
     </div>
   );

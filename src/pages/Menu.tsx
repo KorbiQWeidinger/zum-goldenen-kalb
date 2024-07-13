@@ -233,7 +233,7 @@ export function Menu() {
       <Header />
       <div
         style={{
-          backgroundImage: "url('/zum-goldenen-kalb/meats_2.jpg')",
+          backgroundImage: "url('/meats_2.jpg')",
         }}
         className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-56 pb-28 px-4 md:px-16 text-center"
       >

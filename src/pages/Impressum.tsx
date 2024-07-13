@@ -9,7 +9,7 @@ export function Impressum() {
       <Header />
       <div
         style={{
-          backgroundImage: "url('/zum-goldenen-kalb/kalb-tables.jpg')",
+          backgroundImage: "url('/kalb-tables.jpg')",
         }}
         className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-48 pb-24"
       >

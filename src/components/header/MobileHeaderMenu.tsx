@@ -39,7 +39,7 @@ export const MobileHeaderMenu = ({
         />
       </button>
       <img
-        src={"/zum-goldenen-kalb/kalb-head-gold.png"}
+        src={"/kalb-head-gold.png"}
         className="h-32 my-10 mr-2 transition-all duration-300"
         alt="Logo"
       />

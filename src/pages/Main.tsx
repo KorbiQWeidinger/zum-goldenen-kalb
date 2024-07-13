@@ -12,14 +12,14 @@ export function Main() {
       <Header />
       <div
         style={{
-          backgroundImage: "url('/zum-goldenen-kalb/kalb-bg-worldmap.jpg')",
+          backgroundImage: "url('/kalb-bg-worldmap.jpg')",
         }}
         className="bg-no-repeat bg-cover bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen"
       >
         <div className="absolute inset-0 bg-black opacity-40 z-10" />
 
         <img
-          src={"/zum-goldenen-kalb/kalb-text.png"}
+          src={"/kalb-text.png"}
           className="logo w-full px-4 md:px-0 md:w-2/3 mx-32 mt-8 z-20"
           alt="Zum Goldenen Kalb"
         />
@@ -43,7 +43,7 @@ export function Main() {
       </div>
       <div
         style={{
-          backgroundImage: "url('/zum-goldenen-kalb/kalb-tables.jpg')",
+          backgroundImage: "url('/kalb-tables.jpg')",
         }}
         className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen py-28 px-4 md:px-16 text-center"
       >
