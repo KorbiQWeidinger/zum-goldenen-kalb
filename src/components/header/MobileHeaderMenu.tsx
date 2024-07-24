@@ -5,6 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { IgButton } from "./IgButton";
 import { FbButton } from "./FbButton";
 import { useEffect } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
+import Spacer from "../ui/Spacer";
+import { useTranslation } from "react-i18next";
 
 const useLockBodyScroll = (lock: boolean) => {
   useEffect(() => {
@@ -27,6 +30,7 @@ export const MobileHeaderMenu = ({
   toggleMobileMenu: () => void;
 }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   useLockBodyScroll(isOpen);
 
   return (
@@ -44,28 +48,28 @@ export const MobileHeaderMenu = ({
         alt="Logo"
       />
       <Button
-        label="HOME"
+        label={t("header.home")}
         onClick={() => {
           navigate("/");
           toggleMobileMenu();
         }}
       />
       <Button
-        label="ABOUT"
+        label={t("header.about")}
         onClick={() => {
           navigate("/");
           toggleMobileMenu();
         }}
       />
       <Button
-        label="MENU"
+        label={t("header.menu")}
         onClick={() => {
           navigate("/menu");
           toggleMobileMenu();
         }}
       />
       <Button
-        label="RESERVIERUNG"
+        label={t("header.reservations")}
         onClick={() => {
           navigate("/reservations");
           toggleMobileMenu();
@@ -75,6 +79,9 @@ export const MobileHeaderMenu = ({
         <IgButton size={"xl"} />
         <FbButton size={"xl"} />
       </div>
+      <Spacer />
+      <LanguageSwitcher />
+      <Spacer size="xl" />
     </div>
   );
 };

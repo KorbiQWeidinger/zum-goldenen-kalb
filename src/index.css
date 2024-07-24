@@ -2,16 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
-
-html,
 body {
   overflow-x: hidden;
   background-color: #000000;
-}
-
-body {
-  overflow-y: hidden;
 }

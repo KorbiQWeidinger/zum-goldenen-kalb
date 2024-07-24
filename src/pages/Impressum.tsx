@@ -10,8 +10,10 @@ export function Impressum() {
       <div
         style={{
           backgroundImage: "url('/kalb-tables.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
         }}
-        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-48 pb-24"
+        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
       >
         <BlockHeader label="Kontakt & Impressum" header="IMPRESSUM" />
         <div className="absolute inset-0 bg-black opacity-50 z-10" />
@@ -27,7 +29,7 @@ export function Impressum() {
             <Spacer size="lg" />
             HRB: 293530
             <br />
-            USt.-Id. Nr.: auf Anfrage
+            USt.-Id. Nr.: DE368612708
             <Spacer size="lg" />
             <p className="font-semibold">Öffnungszeiten: </p>
             Di – Fr: 17:00 Uhr – 01:00 Uhr <br />

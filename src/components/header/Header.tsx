@@ -6,6 +6,8 @@ import { Button } from "./NavButton";
 import { IgButton } from "./IgButton";
 import { FbButton } from "./FbButton";
 import { MobileHeaderMenu } from "./MobileHeaderMenu";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -14,6 +16,7 @@ const Header = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [darkHeader, setDarkHeader] = useState(false);
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
@@ -87,17 +90,24 @@ const Header = () => {
 
             {/* Desktop Buttons */}
             <div className="hidden lg:flex flex-1 justify-end items-stretch text-white">
-              <Button label="HOME" onClick={() => navigate("/")} />
-              <Button label="ABOUT" onClick={() => navigate("/")} />
-              <Button label="MENU" onClick={() => navigate("/menu")} />
+              <Button label={t("header.home")} onClick={() => navigate("/")} />
+              <Button label={t("header.about")} onClick={() => navigate("/")} />
               <Button
-                label="RESERVIERUNG"
+                label={t("header.menu")}
+                onClick={() => navigate("/menu")}
+              />
+              <Button
+                label={t("header.reservations")}
                 onClick={() => navigate("/reservations")}
               />
               <div className="w-6" />
               <IgButton size="xl" />
               <div className="w-6" />
               <FbButton size="xl" />
+              <div className="w-6" />
+              <div className="flex items-center justify-center">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         </div>
