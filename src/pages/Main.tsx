@@ -4,6 +4,7 @@ import Header from "../components/header/Header";
 import RotatingTextComponent from "../components/RoatatingText";
 import { Footer } from "../components/Footer";
 import { useTranslation } from "react-i18next";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export function Main() {
   const navigate = useNavigate();
@@ -12,25 +13,11 @@ export function Main() {
   return (
     <>
       <Header />
-      {/* Fixed background */}
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundImage: "url('/kalb-bg-worldmap.jpg')",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          zIndex: -1,
-        }}
-      />
-      {/* Content */}
-      <div className="bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen">
+      <ParallaxBanner
+        layers={[{ image: "/kalb-bg-worldmap.jpg", speed: -25 }]}
+        className="bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen"
+      >
         <div className="absolute inset-0 bg-black opacity-40 z-10" />
-
         <img
           src={"/kalb-text.png"}
           className="logo w-full px-4 md:px-0 md:w-2/3 mx-32 mt-8 z-20"
@@ -43,7 +30,7 @@ export function Main() {
         >
           {t("home.buttons.reservations")}
         </button>
-      </div>
+      </ParallaxBanner>
       <div
         id="about"
         className="bg-black text-white py-28 px-4 md:px-16 text-center"
@@ -54,12 +41,9 @@ export function Main() {
         />
         <RotatingTextComponent />
       </div>
-      <div
-        style={{
-          backgroundImage: "url('/kalb-tables.jpg')",
-          backgroundAttachment: "fixed",
-        }}
-        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen py-28 px-4 md:px-16 text-center"
+      <ParallaxBanner
+        layers={[{ image: "/kalb-tables.jpg", speed: -25 }]}
+        className="relative flex flex-col items-center justify-center w-screen min-w-screen py-28 px-4 md:px-16 text-center"
       >
         <div className="absolute inset-0 bg-black opacity-50 z-10" />
         <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
@@ -69,7 +53,7 @@ export function Main() {
         >
           {t("home.buttons.menu")}
         </button>
-      </div>
+      </ParallaxBanner>
       <div className="bg-black text-white py-28 px-4 md:px-16 text-center">
         <BlockHeader label={t("home.divider_1")} header={t("home.title_2")} />
         <div className="flex flex-col justify-center items-center">

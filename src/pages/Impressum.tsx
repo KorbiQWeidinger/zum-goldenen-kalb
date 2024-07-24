@@ -2,22 +2,19 @@ import Header from "../components/header/Header";
 import { BlockHeader } from "../components/BlockHeader";
 import { Footer } from "../components/Footer";
 import Spacer from "../components/ui/Spacer";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export function Impressum() {
   return (
     <>
       <Header />
-      <div
-        style={{
-          backgroundImage: "url('/kalb-tables.jpg')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-        }}
+      <ParallaxBanner
+        layers={[{ image: "/kalb-bg-worldmap.jpg", speed: -25 }]}
         className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
       >
         <BlockHeader label="Kontakt & Impressum" header="IMPRESSUM" />
         <div className="absolute inset-0 bg-black opacity-50 z-10" />
-      </div>
+      </ParallaxBanner>
       <div className="bg-black text-white py-16 md:py-24 px-4 md:px-16 text-center">
         <div className="mt-0 flex flex-col md:flex-row justify-center items-start md:items-center space-y-8 md:space-y-0 md:space-x-8">
           <div className="flex-1 text-lg md:text-xl text-left">

@@ -8,6 +8,7 @@ import { CrossLikeShape, CrossLikeShape2 } from "../components/shapes/Shapes";
 import Header from "../components/header/Header";
 import Spacer from "../components/ui/Spacer";
 import { useTranslation } from "react-i18next";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 const STARTERS_LEFT = {
   de: [
@@ -409,17 +410,13 @@ export function Menu() {
   return (
     <>
       <Header />
-      <div
-        style={{
-          backgroundImage: "url('/meats_2.jpg')",
-          backgroundAttachment: "fixed",
-          backgroundPosition: "center",
-        }}
-        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
+      <ParallaxBanner
+        layers={[{ image: "/meats_2.jpg", speed: -25 }]}
+        className="relative flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
       >
         <div className="absolute inset-0 bg-black opacity-50 z-10" />
         <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
-      </div>
+      </ParallaxBanner>
       <div className="bg-black text-white pt-14 pb-28 px-4 md:px-16 text-center">
         <DividerWithText label={t("menu.starters")} size="text-lg md:text-xl" />
         <Spacer size="lg" />
