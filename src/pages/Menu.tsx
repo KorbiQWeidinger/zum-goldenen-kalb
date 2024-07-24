@@ -29,8 +29,7 @@ const STARTERS_LEFT = {
     },
     {
       title: "FRANZÖSISCHE ZWIEBELSUPPE",
-      description:
-        "mit Croûtons, gratiniert mit Gruyère-Käse; auf Wunsch mit einem Rotwein-Shot (franz. 'pour faire chabrot') + 2,50",
+      description: "mit Croûtons, gratiniert mit Gruyère-Käse",
       price: "14,50",
     },
   ],
@@ -52,8 +51,7 @@ const STARTERS_LEFT = {
     },
     {
       title: "FRENCH ONION SOUP",
-      description:
-        "with croutons, gratinated with Gruyère cheese; optional with a shot of red wine (French 'pour faire chabrot') + 2,50",
+      description: "with croutons, gratinated with Gruyère cheese",
       price: "14,50",
     },
   ],
@@ -106,7 +104,7 @@ const STARTERS_RIGHT = {
   ],
 };
 
-const STEAK_DONENESS = {
+const STEAK_DONENESS_LEFT = {
   de: [
     {
       title: "BLACK & BLUE",
@@ -121,21 +119,6 @@ const STEAK_DONENESS = {
       title: "MEDIUM RARE",
       description:
         "Das Fleisch wird bei mittlerer Hitze gebraten, so dass es im Kern bis auf etwa 50°-54°C erhitzt wird. Es erscheint dadurch immer noch blutig.",
-    },
-    {
-      title: "MEDIUM",
-      description:
-        "Das Fleisch wird bei mittlerer Hitze auf den Punkt gegart. Es weist im Inneren eine Temperatur von maximal 54°-56°C auf und ist von außen nach innnen gleichmäßig rosa gefärbt.",
-    },
-    {
-      title: "MEDIUM WELL",
-      description:
-        "Das Fleisch wird auf kleinem Feuer langsam gebraten, so dass es im Kern nur noch ganz leicht rosa ist. Es hat im Kern eine Temperatur von etwa 56°-60°C.",
-    },
-    {
-      title: "WELL DONE | FILET: NUR BUTTERFLYCUT",
-      description:
-        "Durchgebraten / grau 60°C+ (bei dieser Garstufe übernehmen wir keine Verantwortung).",
     },
   ],
   en: [
@@ -153,6 +136,33 @@ const STEAK_DONENESS = {
       description:
         "Medium rare steaks are warm with a pink to red centre - soft and juicy on the inside and firm on the outside. Mostly our reccomendation.",
     },
+  ],
+};
+
+const STEAK_DONENESS_RIGHT = {
+  de: [
+    {
+      title: "MEDIUM",
+      description:
+        "Das Fleisch wird bei mittlerer Hitze auf den Punkt gegart. Es weist im Inneren eine Temperatur von maximal 54°-56°C auf und ist von außen nach innnen gleichmäßig rosa gefärbt.",
+    },
+    {
+      title: "MEDIUM WELL",
+      description:
+        "Das Fleisch wird auf kleinem Feuer langsam gebraten, so dass es im Kern nur noch ganz leicht rosa ist. Es hat im Kern eine Temperatur von etwa 56°-60°C.",
+    },
+    {
+      title: "WELL DONE",
+      description: (
+        <>
+          FILET: NUR BUTTERFLYCUT <br />
+          Durchgebraten / grau 60°C+ (bei dieser Garstufe übernehmen wir keine
+          Verantwortung).
+        </>
+      ),
+    },
+  ],
+  en: [
     {
       title: "MEDIUM",
       description:
@@ -177,8 +187,8 @@ const SIDES = {
     { title: "TRÜFFELPOMMES (GROSS)", price: "22,00" },
     { title: "POMMES", price: "6,50" },
     { title: "SÜSSKARTOFFELPÜREE", price: "6,50" },
-    { title: "BAKED POTATO & SOUR CREAM", price: "7,50" },
-    { title: "CREAM CORN", price: "6,50" },
+    { title: "BAKED POTATO & SOUR CREAM", price: "6,50" },
+    { title: "CREAM CORN", price: "7,50" },
     { title: "BLATTSPINAT", price: "7,50" },
     { title: "SPECKBOHNEN", price: "7,50" },
     { title: "PAPRIKA & TOMATE GESCHMORT", price: "7,50" },
@@ -190,8 +200,8 @@ const SIDES = {
     { title: "TRUFFLE FRIES (LARGE)", price: "22,00" },
     { title: "FRIES", price: "6,50" },
     { title: "MASHED SWEET POTATOES", price: "6,50" },
-    { title: "BAKED POTATO & SOUR CREAM", price: "7,50" },
-    { title: "CREAMED CORN", price: "6,50" },
+    { title: "BAKED POTATO & SOUR CREAM", price: "6,50" },
+    { title: "CREAMED CORN", price: "7,50" },
     { title: "LEAF SPINACH", price: "7,50" },
     { title: "GREEN BEANS WITH BACON", price: "7,50" },
     { title: "STEAMED PAPRIKA & TOMATO", price: "7,50" },
@@ -294,8 +304,12 @@ const DESSERTS = {
     { title: "CRÈME BRÛLÉE", price: "7,50" },
     {
       title: "SORBET",
-      description:
-        "Zur Auswahl: Zitrone, Basilikum oder Tagespsecial mit Vodka- oder Gin-Shot +4,50",
+      description: (
+        <>
+          Zitrone, Basilikum oder Tagespsecial <br />
+          mit Vodka- oder Gin-Shot +4,50
+        </>
+      ),
       price: "4,00",
     },
     {
@@ -462,11 +476,17 @@ export function Menu() {
         </div>
         <DividerWithText label={t("menu.grill")} size="text-base" />
         <Spacer size="lg" />
-        <div className="px-[5%] md:px-[15%] lg:px-[25%] w-full">
-          <SteakTypeColumn
-            items={STEAK_DONENESS[i18n.language as "en" | "de"]}
-          />
-          <Spacer />
+        <div className="flex flex-col xl:flex-row xl:space-x-16 justify-center items-start md:items-start space-y-0 px-[5%] md:px-[15%] lg:px-[25%] w-full">
+          <div className="w-full md:flex-1">
+            <SteakTypeColumn
+              items={STEAK_DONENESS_LEFT[i18n.language as "en" | "de"]}
+            />
+          </div>
+          <div className="w-full md:flex-1">
+            <SteakTypeColumn
+              items={STEAK_DONENESS_RIGHT[i18n.language as "en" | "de"]}
+            />
+          </div>
         </div>
         <div className="flex flex-col xl:flex-row xl:space-x-16 justify-center items-start md:items-start space-y-0 px-[5%] md:px-[15%] lg:px-[25%] w-full">
           <div className="w-full md:flex-1">
