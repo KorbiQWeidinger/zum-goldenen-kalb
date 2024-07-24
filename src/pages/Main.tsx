@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { BlockHeader } from "../components/BlockHeader";
-import { FooterWithFire } from "../components/Footer";
 import Header from "../components/header/Header";
 import RotatingTextComponent from "../components/RoatatingText";
+import { Footer } from "../components/Footer";
 
 export function Main() {
   const navigate = useNavigate();
@@ -82,7 +82,7 @@ export function Main() {
           Jetzt online reservieren
         </button>
       </div>
-      <FooterWithFire />
+      <Footer />
     </>
   );
 }

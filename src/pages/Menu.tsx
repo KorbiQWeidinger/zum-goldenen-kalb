@@ -3,7 +3,7 @@ import {
   DividerWithLogo,
   DividerWithText,
 } from "../components/BlockHeader";
-import { FooterWithFire } from "../components/Footer";
+import { Footer } from "../components/Footer";
 import { CrossLikeShape, CrossLikeShape2 } from "../components/shapes/Shapes";
 import Header from "../components/header/Header";
 import Spacer from "../components/ui/Spacer";
@@ -326,7 +326,7 @@ export function Menu() {
           </div>
         </div>
       </div>
-      <FooterWithFire />
+      <Footer />
     </>
   );
 }
