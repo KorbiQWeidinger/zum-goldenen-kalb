@@ -350,7 +350,7 @@ const FoodItem = ({
   price,
 }: {
   title: string;
-  description?: string;
+  description?: string | JSX.Element;
   price: string;
 }) => {
   return (
@@ -367,7 +367,7 @@ const FoodItem = ({
 const FoodColumn = ({
   items,
 }: {
-  items: { title: string; description?: string; price: string }[];
+  items: { title: string; description?: string | JSX.Element; price: string }[];
 }) => {
   return (
     <div>
@@ -388,7 +388,7 @@ const SteakTypeItem = ({
   description,
 }: {
   title: string;
-  description: string;
+  description: string | JSX.Element;
 }) => {
   return (
     <div className="flex justify-between text-center mb-4">
@@ -403,7 +403,7 @@ const SteakTypeItem = ({
 const SteakTypeColumn = ({
   items,
 }: {
-  items: { title: string; description: string }[];
+  items: { title: string; description: string | JSX.Element }[];
 }) => {
   return (
     <div>
