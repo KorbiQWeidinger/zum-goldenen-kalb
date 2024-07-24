@@ -13,6 +13,7 @@ export function Main() {
       <div
         style={{
           backgroundImage: "url('/kalb-bg-worldmap.jpg')",
+          backgroundAttachment: "fixed",
         }}
         className="bg-no-repeat bg-cover bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen"
       >
@@ -44,6 +45,7 @@ export function Main() {
       <div
         style={{
           backgroundImage: "url('/kalb-tables.jpg')",
+          backgroundAttachment: "fixed",
         }}
         className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen py-28 px-4 md:px-16 text-center"
       >

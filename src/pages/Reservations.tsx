@@ -11,8 +11,10 @@ export function Reservations() {
       <div
         style={{
           backgroundImage: "url('/kalb-tables.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
         }}
-        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-48 pb-24"
+        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
       >
         <BlockHeader
           label="Buchen Sie gleich ihren Tisch"

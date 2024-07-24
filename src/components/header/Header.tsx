@@ -50,7 +50,7 @@ const Header = () => {
       <header
         className={`bg-black ${
           darkHeader ? "bg-opacity-90" : "bg-opacity-60"
-        } fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        } fixed top-0 left-0 right-0 z-50 transition-all duration-1000 ${
           showHeader ? "translate-y-0" : "-translate-y-full"
         } w-screen`}
       >
