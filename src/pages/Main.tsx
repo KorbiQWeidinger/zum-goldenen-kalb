@@ -12,13 +12,23 @@ export function Main() {
   return (
     <>
       <Header />
+      {/* Fixed background */}
       <div
         style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
           backgroundImage: "url('/kalb-bg-worldmap.jpg')",
-          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          zIndex: -1,
         }}
-        className="bg-no-repeat bg-cover bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen"
-      >
+      />
+      {/* Content */}
+      <div className="bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen">
         <div className="absolute inset-0 bg-black opacity-40 z-10" />
 
         <img
