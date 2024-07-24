@@ -1,31 +1,27 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
-const TEXTS = [
-  "Zum goldenen Kalb ist Münchens erstes und einzigartiges New York Steakhouse.",
-  "Hier gibt es die ehrlichsten Steaks der Stadt direkt gegenüber der Schranne am Viktualienmarkt.",
-];
+const TEXTS = ["home.text_1", "home.text_2"];
 
 function RotatingTextComponent() {
-  const [currentText, setCurrentText] = useState(TEXTS[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [opacity, setOpacity] = useState(1);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setOpacity(0);
 
       setTimeout(() => {
-        setCurrentText((prevText) => {
-          const nextIndex = (TEXTS.indexOf(prevText) + 1) % TEXTS.length;
-          return TEXTS[nextIndex];
-        });
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % TEXTS.length);
         setTimeout(() => {
           setOpacity(1);
         }, 100);
       }, 900);
-    }, 8000);
+    }, 6000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [i18n.language]);
 
   return (
     <div className="flex justify-center items-center h-32">
@@ -36,7 +32,7 @@ function RotatingTextComponent() {
           opacity: opacity,
         }}
       >
-        {currentText}
+        {t(TEXTS[currentIndex])}
       </p>
     </div>
   );

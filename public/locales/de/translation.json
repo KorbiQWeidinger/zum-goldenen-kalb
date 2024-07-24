@@ -4,5 +4,47 @@
     "about": "Über uns",
     "menu": "Menü",
     "reservations": "Reservierung"
+  },
+  "footer": {
+    "opening_hours": "Öffnungszeiten",
+    "open_1": "DI – FR: 17:00 – 01:00 Uhr",
+    "open_2": "SA: 12:00 – 01:00 Uhr"
+  },
+  "home": {
+    "buttons": {
+      "reservations": "Reservieren",
+      "menu": "Menü",
+      "book": "Jetzt online reservieren"
+    },
+    "text_1": "Zum goldenen Kalb ist Münchens erstes und einzigartiges New York Steakhouse.",
+    "text_2": "Hier gibt es die ehrlichsten Steaks der Stadt direkt gegenüber der Schranne am Viktualienmarkt.",
+    "text_3": "Rufen Sie uns an oder reservieren Sie Ihren Tisch gleich online.",
+    "text_4": "Lassen Sie es sich schmecken!",
+    "title_1": "UNSERE SPEISEKARTE",
+    "title_2": "RESERVIERUNG",
+    "divider_1": "Buchen Sie gleich ihren Tisch"
+  },
+  "book": {
+    "text_1": "Online können nur Tische bis 6 Personen reserviert werden.",
+    "text_2": "Tische ab 7 Personen bitte telefonisch reservieren unter",
+    "text_3": "Andere Uhrzeiten als die vorgeschlagenen bitte ebenfalls telefonisch erfragen. Wir planen für Euren Besuch 2 1/2 Stunden ein. Reservierungen ab 20:00 Uhr sind zeitlich nicht begrenzt.",
+    "text_4": "Öffnungszeiten",
+    "text_5": "Dienstag – Samstag von 17:00 Uhr bis 01:00 Uhr. Samstags ab 12:00 Uhr.",
+    "text_6": "Wir freuen uns auf Euren Besuch.",
+    "text_7": "Euer Team vom Goldenen Kalb",
+    "text_8": "Sie werden über die erfolgreiche Reservierung per Email informiert."
+  },
+  "menu": {
+    "starters": "Vorspeisen",
+    "steaks": "Dry Aged Steaks",
+    "service_1": "Unser Service Begleitet Sie zum",
+    "cabinet": "Reifeschrank",
+    "special": "Mit täglich wechselnden special cuts",
+    "all": "Alle Steaks auch als Surf&Turf mit Wildfanggarnele 23,00 / Stück",
+    "sides": "Beilagen",
+    "classics": "KLASSIKER",
+    "sauces": "Saucen",
+    "desserts": "Nachspeisen",
+    "grill": "Alle Steaks werden auf unserem Hajatec Holzkohlegrill zubereitet"
   }
 }

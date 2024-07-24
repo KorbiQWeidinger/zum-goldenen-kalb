@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
 export function Footer() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <footer className="bg-black text-gold-500 py-8 px-16 border-t border-gold-500">
@@ -18,7 +20,7 @@ export function Footer() {
             <p className="mb-4 md:mb-1">80469 MÜNCHEN</p>
           </a>
           <p className="mb-0.5 md:mb-1">
-            Tel.: <a href="tel:+498923542290">+49 (0)/89 23 54 22 90</a>
+            <a href="tel:+498923542290">+49 (0)/89 23 54 22 90</a>
           </p>
         </div>
 
@@ -45,9 +47,11 @@ export function Footer() {
 
         {/* Opening Hours */}
         <div className="text-sm text-center order-1 md:order-3">
-          <p className="mb-0.5 md:mb-1">ÖFFNUNGSZEITEN:</p>
-          <p className="mb-0.5 md:mb-1">DI – FR: 17:00 – 01:00 Uhr</p>
-          <p>SA: 12:00 – 01:00 Uhr</p>
+          <p className="mb-0.5 md:mb-1 uppercase">
+            {t("footer.opening_hours")}:
+          </p>
+          <p className="mb-0.5 md:mb-1">{t("footer.open_1")}</p>
+          <p>{t("footer.open_2")}</p>
         </div>
       </div>
     </footer>

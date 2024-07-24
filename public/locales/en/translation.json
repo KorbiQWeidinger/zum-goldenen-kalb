@@ -4,5 +4,47 @@
     "about": "about us",
     "menu": "menu",
     "reservations": "reservation"
+  },
+  "footer": {
+    "opening_hours": "Opening hours",
+    "open_1": "TUE – FRI: 5:00 PM – 1:00 AM",
+    "open_2": "SAT: 12:00 PM – 1:00 AM"
+  },
+  "home": {
+    "buttons": {
+      "reservations": "Reserve a Table",
+      "menu": "Menu",
+      "book": "Book now"
+    },
+    "text_1": "Zum goldenen Kalb is Munich's first and only New York steakhouse.",
+    "text_2": "Here you can get the most authentic steaks in town directly across from the Schranne at Viktualienmarkt.",
+    "text_3": "Give us a call or book your table online now.",
+    "text_4": "Savour the taste!",
+    "title_1": "OUR MENU",
+    "title_2": "RESERVE A TABLE",
+    "divider_1": "Book your table now"
+  },
+  "book": {
+    "text_1": "Online reservations are only available for tables of up to 6 people.",
+    "text_2": "For tables of 7 or more, please reserve by phone at",
+    "text_3": "For times other than those suggested, please also inquire by phone. We allocate 2 and a half hours for your visit. Reservations after 8:00 PM are not time-limited.",
+    "text_4": "Opening Hours",
+    "text_5": "Tuesday – Saturday from 5:00 PM to 1:00 AM. Saturdays from 12:00 PM.",
+    "text_6": "We look forward to your visit.",
+    "text_7": "Your team at The Golden Calf",
+    "text_8": "You will be informed about the successful reservation via email."
+  },
+  "menu": {
+    "starters": "Starters",
+    "steaks": "Dry Aged Steaks",
+    "service_1": "OUR SERVICE STAFF WILL ACCOMPANY YOU TO THE",
+    "cabinet": "DRY-AGE CABINETS",
+    "special": "WITH DAILY CHANGING SPECIAL CUTS",
+    "all": "ALL STEAKS ALSO AVAILABLE AS SURF&TURF WITH WILD PRAWNS 23,00 EACH",
+    "sides": "Sides",
+    "classics": "Classics",
+    "sauces": "Sauces",
+    "desserts": "Desserts",
+    "grill": "All steaks are prepared on our Hajatec charcoal grill"
   }
 }

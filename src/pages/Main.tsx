@@ -3,9 +3,11 @@ import { BlockHeader } from "../components/BlockHeader";
 import Header from "../components/header/Header";
 import RotatingTextComponent from "../components/RoatatingText";
 import { Footer } from "../components/Footer";
+import { useTranslation } from "react-i18next";
 
 export function Main() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -29,7 +31,7 @@ export function Main() {
           onClick={() => navigate("/reservations")}
           className="text-2xl w-48 h-16 bg-transparent border-2 border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
         >
-          Reservieren
+          {t("home.buttons.reservations")}
         </button>
       </div>
       <div
@@ -50,38 +52,32 @@ export function Main() {
         className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen py-28 px-4 md:px-16 text-center"
       >
         <div className="absolute inset-0 bg-black opacity-50 z-10" />
-        <BlockHeader
-          label={"Steak & Entourage"}
-          header={"UNSERE SPEISEKARTE"}
-        />
+        <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
         <button
           onClick={() => navigate("/menu")}
           className="mt-6 text-lg w-24 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
         >
-          Menu
+          {t("home.buttons.menu")}
         </button>
       </div>
       <div className="bg-black text-white py-28 px-4 md:px-16 text-center">
-        <BlockHeader
-          label="Buchen Sie gleich ihren Tisch"
-          header="RESERVIERUNG"
-        />
+        <BlockHeader label={t("home.divider_1")} header={t("home.title_2")} />
         <div className="flex flex-col justify-center items-center">
           <div className="mt-10 font-playfair italic text-xl text-white">
-            Rufen Sie uns an oder reservieren Sie Ihren Tisch gleich online.
+            {t("home.text_3")}
           </div>
           <div className="mt-5 mb-10 font-playfair italic text-xl text-white">
-            Lassen Sie es sich schmecken!
+            {t("home.text_4")}
           </div>
           <a href="tel:+498923542290" className="text-lg text-white">
-            Tel.: +49 89 2354 2290
+            +49 89 2354 2290
           </a>
         </div>
         <button
           onClick={() => navigate("/reservations")}
           className="mt-16 text-lg w-64 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
         >
-          Jetzt online reservieren
+          {t("home.buttons.reservations")}
         </button>
       </div>
       <Footer />
