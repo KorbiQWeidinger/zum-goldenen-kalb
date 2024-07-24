@@ -16,8 +16,8 @@ export const DividerWithText = ({
       <span className="flex-1 border-t border-gold-500"></span>
       <div
         className={`mx-2 ${
-          size ? size : "text-sm md:text-md"
-        } font-playfair italic tracking-widest text-gold-500 border-gold-500`}
+          size ? size : "text-md md:text-lg"
+        } font-times uppercase tracking-widest text-gold-500 border-gold-500`}
       >
         {label}
       </div>

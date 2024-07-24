@@ -5,6 +5,7 @@ import RotatingTextComponent from "../components/RoatatingText";
 import { Footer } from "../components/Footer";
 import { useTranslation } from "react-i18next";
 import { ParallaxBanner } from "react-scroll-parallax";
+import Spacer from "../components/ui/Spacer";
 
 export function Main() {
   const navigate = useNavigate();
@@ -23,13 +24,15 @@ export function Main() {
           className="logo w-full px-4 md:px-0 md:w-2/3 mx-32 mt-8 z-20"
           alt="Zum Goldenen Kalb"
         />
-        <div className="h-0.5 my-8 w-4/5 md:w-2/3 bg-white z-20" />
+        <Spacer size="xl" />
+        <Spacer size="xl" />
         <button
           onClick={() => navigate("/reservations")}
           className="text-2xl w-48 h-16 bg-transparent border-2 border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
         >
           {t("home.buttons.reservations")}
         </button>
+        x
       </ParallaxBanner>
       <div
         id="about"

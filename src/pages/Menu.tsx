@@ -432,7 +432,7 @@ export function Menu() {
         <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
       </ParallaxBanner>
       <div className="bg-black text-white pt-14 pb-28 px-4 md:px-16 text-center">
-        <DividerWithText label={t("menu.starters")} size="text-lg md:text-xl" />
+        <DividerWithText label={t("menu.starters")} />
         <Spacer size="lg" />
         <div className="flex flex-col xl:flex-row xl:space-x-16 justify-center items-start md:items-start space-y-0 px-[5%] md:px-[15%] lg:px-[25%] w-full">
           <div className="w-full md:flex-1">
@@ -474,7 +474,7 @@ export function Menu() {
             </div>
           </div>
         </div>
-        <DividerWithText label={t("menu.grill")} size="text-base" />
+        <DividerWithText label={t("menu.grill")} />
         <Spacer size="lg" />
         <div className="flex flex-col xl:flex-row xl:space-x-16 justify-center items-start md:items-start space-y-0 px-[5%] md:px-[15%] lg:px-[25%] w-full">
           <div className="w-full md:flex-1">
