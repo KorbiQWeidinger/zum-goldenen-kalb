@@ -60,10 +60,10 @@ export function Main() {
       <div className="bg-black text-white py-28 px-4 md:px-16 text-center">
         <BlockHeader label={t("home.divider_1")} header={t("home.title_2")} />
         <div className="flex flex-col justify-center items-center">
-          <div className="mt-10 font-playfair italic text-xl text-white">
+          <div className="mt-10 font-times italic text-xl text-white">
             {t("home.text_3")}
           </div>
-          <div className="mt-5 mb-10 font-playfair italic text-xl text-white">
+          <div className="mt-5 mb-10 font-times italic text-xl text-white">
             {t("home.text_4")}
           </div>
           <a href="tel:+498923542290" className="text-lg text-white">

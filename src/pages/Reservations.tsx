@@ -24,7 +24,7 @@ export function Reservations() {
           <div className="w-full md:flex-1 flex justify-center content-center">
             <QuandooBookingWidget />
           </div>
-          <div className="flex-1 font-playfair italic text-lg md:text-xl text-center md:text-left">
+          <div className="flex-1 font-times text-lg md:text-xl text-center md:text-left">
             {t("book.text_1")}
             <Spacer size="md" />
             {t("book.text_2")}

@@ -26,7 +26,7 @@ function RotatingTextComponent() {
   return (
     <div className="flex justify-center items-center h-32">
       <p
-        className="font-playfair italic text-xl text-white"
+        className="font-times italic text-xl text-white"
         style={{
           transition: "opacity 1s ease-in-out",
           opacity: opacity,
