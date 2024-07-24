@@ -12,7 +12,7 @@
   },
   "home": {
     "buttons": {
-      "reservations": "Reserve a Table",
+      "reservations": "Book a Table",
       "menu": "Menu",
       "book": "Book now"
     },
@@ -21,8 +21,8 @@
     "text_3": "Give us a call or book your table online now.",
     "text_4": "Savour the taste!",
     "title_1": "OUR MENU",
-    "title_2": "RESERVE A TABLE",
-    "divider_1": "Book your table now"
+    "title_2": "BOOK A TABLE",
+    "divider_1": "Reservation"
   },
   "book": {
     "text_1": "Online reservations are only available for tables of up to 6 people.",

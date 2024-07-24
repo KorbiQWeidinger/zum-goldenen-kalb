@@ -71,7 +71,7 @@ export function Main() {
           onClick={() => navigate("/reservations")}
           className="mt-16 text-lg w-64 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
         >
-          {t("home.buttons.reservations")}
+          {t("home.buttons.book")}
         </button>
       </div>
       <Footer />
