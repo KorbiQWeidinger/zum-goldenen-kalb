@@ -36,7 +36,7 @@ export function Main() {
       </ParallaxBanner>
       <div
         id="about"
-        className="bg-black text-white py-28 px-4 md:px-16 text-center"
+        className="bg-black text-white py-44 px-4 md:px-16 text-center"
       >
         <BlockHeader
           label="Grilled on HaJaTec's charcoal grill"
@@ -46,7 +46,7 @@ export function Main() {
       </div>
       <ParallaxBanner
         layers={[{ image: "/kalb-tables.jpg", speed: -25 }]}
-        className="relative flex flex-col items-center justify-center w-screen min-w-screen py-28 px-4 md:px-16 text-center"
+        className="relative flex flex-col items-center justify-center w-screen min-w-screen py-44 px-4 md:px-16 text-center"
       >
         <div className="absolute inset-0 bg-black opacity-50 z-10" />
         <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
@@ -57,7 +57,7 @@ export function Main() {
           {t("home.buttons.menu")}
         </button>
       </ParallaxBanner>
-      <div className="bg-black text-white py-28 px-4 md:px-16 text-center">
+      <div className="bg-black text-white py-44 px-4 md:px-16 text-center">
         <BlockHeader label={t("home.divider_1")} header={t("home.title_2")} />
         <div className="flex flex-col justify-center items-center">
           <div className="mt-10 font-times italic text-xl text-white">
