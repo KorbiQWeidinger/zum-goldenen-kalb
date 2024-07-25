@@ -1,8 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { BlockHeader } from "../components/BlockHeader";
-import Header from "../components/header/Header";
 import RotatingTextComponent from "../components/RoatatingText";
-import { Footer } from "../components/Footer";
 import { useTranslation } from "react-i18next";
 import { ParallaxBanner } from "react-scroll-parallax";
 import Spacer from "../components/ui/Spacer";
@@ -13,7 +11,6 @@ export function Main() {
 
   return (
     <>
-      <Header />
       <ParallaxBanner
         layers={[{ image: "/kalb-bg-worldmap.jpg", speed: -25 }]}
         className="bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen"
@@ -48,7 +45,7 @@ export function Main() {
         layers={[{ image: "/kalb-tables.jpg", speed: -25 }]}
         className="relative flex flex-col items-center justify-center w-screen min-w-screen py-44 px-4 md:px-16 text-center"
       >
-        <div className="absolute inset-0 bg-black opacity-50 z-10" />
+        <div className="absolute inset-0 bg-black opacity-40 z-10" />
         <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
         <button
           onClick={() => navigate("/menu")}
@@ -77,7 +74,6 @@ export function Main() {
           {t("home.buttons.book")}
         </button>
       </div>
-      <Footer />
     </>
   );
 }

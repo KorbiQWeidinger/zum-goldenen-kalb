@@ -26,9 +26,13 @@ export const DividerWithText = ({
   );
 };
 
-export const DividerWithLogo = () => {
+export const DividerWithLogo = ({ px }: { px?: string }) => {
   return (
-    <div className="flex items-center justify-center px-[5%] md:px-[15%] lg:px-[25%] w-full z-20">
+    <div
+      className={`flex items-center justify-center ${
+        px ? px : "px-[5%] md:px-[15%] lg:px-[25%]"
+      } w-full z-20`}
+    >
       <span className="flex-1 border-t border-gold-500"></span>
       <img src={"/kalb-head-gold.svg"} className="h-12 w-12" alt="" />
       <span className="flex-1 border-t border-gold-500"></span>

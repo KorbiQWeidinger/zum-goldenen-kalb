@@ -20,7 +20,7 @@ const QuandooBookingWidget = () => {
     }
   }, []);
 
-  return <div id="quandoo-booking-widget" />;
+  return <div id="quandoo-booking-widget" className="border-gold-500 border" />;
 };
 
 export default QuandooBookingWidget;

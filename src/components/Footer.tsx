@@ -12,7 +12,6 @@ export function Footer() {
         <div className="text-sm text-center order-2 md:order-1 mt-4 md:mt-0">
           <a
             href="https://maps.app.goo.gl/bn9MtXP8JN7Sr48K9"
-            className="hover:underline"
             target="_blank"
             rel="noopener noreferrer" // Good practice for security reasons when using target="_blank"
           >
@@ -28,7 +27,7 @@ export function Footer() {
         <div className="text-xs text-center order-3 md:order-2 mt-4 md:mt-0">
           © 2024 Zum Goldenen Kalb |{" "}
           <a
-            className="hover:underline hover:cursor-pointer"
+            className="hover:cursor-pointer"
             onClick={() => navigate("/impressum")}
           >
             Impressum
@@ -36,7 +35,6 @@ export function Footer() {
           <p className="md:mt-2">
             <a
               href="https://korbiqweidinger.github.io/"
-              className="hover:underline"
               target="_blank"
               rel="noopener noreferrer" // Good practice for security reasons when using target="_blank"
             >

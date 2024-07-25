@@ -25,14 +25,21 @@
     "divider_1": "Buchen Sie Ihren Tisch"
   },
   "book": {
-    "text_1": "Online können nur Tische bis 6 Personen reserviert werden.",
-    "text_2": "Tische ab 7 Personen bitte telefonisch reservieren unter",
-    "text_3": "Andere Uhrzeiten als die vorgeschlagenen bitte ebenfalls telefonisch erfragen. Wir planen für Euren Besuch 2 1/2 Stunden ein. Reservierungen ab 20:00 Uhr sind zeitlich nicht begrenzt.",
-    "text_4": "Öffnungszeiten",
-    "text_5": "Dienstag – Samstag von 17:00 Uhr bis 01:00 Uhr. Samstags ab 12:00 Uhr.",
-    "text_6": "Wir freuen uns auf Euren Besuch.",
-    "text_7": "Euer Team vom Goldenen Kalb",
-    "text_8": "Sie werden über die erfolgreiche Reservierung per Email informiert."
+    "text_1": "Online-Reservierung bis 6 Personen.",
+    "text_2": "Tischreservierung ab 7 Personen telefonisch unter",
+    "text_3": "Andere Zeiten als die vorgeschlagenen bitte telefonisch erfragen.",
+    "text_4": "Für Ihren Besuch planen wir 2 1/2 Stunden ein.",
+    "text_5": "Ab 20:00 Uhr sind keine zeitlichen Einschränkungen vorgesehen.",
+    "text_6": "Ihr Team vom Goldenen Kalb",
+    "text_7": "Sie werden über Ihre Reservierung per E-Mail informiert.",
+    "reservations": "Online Reservieren",
+    "opening_hours": {
+      "weekday_hours": "Di – Fr: 17.00 – 01.00 Uhr",
+      "saturday_hours": "Sa: 12.00 – 01.00 Uhr",
+      "kitchen_hours": "Küche Di - Sa: 17.00 - 23.00 Uhr",
+      "terrace_menu_hours": "Sa: 12.00 - 17.00 Uhr Terrassenkarte",
+      "closed_days": "So - Mo: Ruhetag"
+    }
   },
   "menu": {
     "starters": "Vorspeisen",

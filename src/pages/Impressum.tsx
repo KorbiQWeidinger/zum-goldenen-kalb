@@ -1,13 +1,10 @@
-import Header from "../components/header/Header";
 import { BlockHeader } from "../components/BlockHeader";
-import { Footer } from "../components/Footer";
 import Spacer from "../components/ui/Spacer";
 import { ParallaxBanner } from "react-scroll-parallax";
 
 export function Impressum() {
   return (
     <>
-      <Header />
       <ParallaxBanner
         layers={[{ image: "/kalb-bg-worldmap.jpg", speed: -25 }]}
         className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
@@ -67,7 +64,6 @@ export function Impressum() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

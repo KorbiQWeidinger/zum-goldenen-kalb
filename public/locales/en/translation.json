@@ -25,14 +25,21 @@
     "divider_1": "Reservation"
   },
   "book": {
-    "text_1": "Online reservations are only available for tables of up to 6 people.",
-    "text_2": "For tables of 7 or more, please reserve by phone at",
-    "text_3": "For times other than those suggested, please also inquire by phone. We allocate 2 and a half hours for your visit. Reservations after 8:00 PM are not time-limited.",
-    "text_4": "Opening Hours",
-    "text_5": "Tuesday – Saturday from 5:00 PM to 1:00 AM. Saturdays from 12:00 PM.",
-    "text_6": "We look forward to your visit.",
-    "text_7": "Your team at The Golden Calf",
-    "text_8": "You will be informed about the successful reservation via email."
+    "text_1": "Online reservation for up to 6 people.",
+    "text_2": "Table reservations for 7 or more people by telephone on",
+    "text_3": "Please enquire by telephone about times other than those suggested.",
+    "text_4": "Please allow 2 1/2 hours for your visit.",
+    "text_5": "There are no time restrictions after 20:00.",
+    "text_6": "Your team Zum Goldenen Kalb",
+    "text_7": "We send you a confirmation e-mail.",
+    "reservations": "Online Reservations",
+    "opening_hours": {
+      "weekday_hours": "Tue – Fri: 5.00 pm – 1.00 am",
+      "saturday_hours": "Sat: 12.00 pm – 1.00 am",
+      "kitchen_hours": "Kitchen Tue - Sat: 5.00 pm - 11.00 pm",
+      "terrace_menu_hours": "Sat: 12.00 pm - 5.00 pm Terras Menu",
+      "closed_days": "Sun - Mon: Closed"
+    }
   },
   "menu": {
     "starters": "Starters",
