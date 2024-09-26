@@ -49,7 +49,7 @@
   "menu": {
     "starters": "Starters",
     "steaks": "Dry Aged Steaks",
-    "service_1": "OUR SERVICE STAFF WILL ACCOMPANY YOU TO THE",
+    "service_1": "WE WILL ACCOMPANY YOU TO THE",
     "cabinet": "DRY-AGE CABINETS",
     "special": "WITH DAILY CHANGING SPECIAL CUTS",
     "all": "ALL STEAKS ALSO AVAILABLE AS SURF&TURF WITH WILD PRAWNS 23,00 EACH",
@@ -57,7 +57,8 @@
     "classics": "Classics",
     "sauces": "Sauces",
     "desserts": "Desserts",
-    "grill": "All steaks are prepared on our HaJaTec charcoal grill"
+    "grill": "All steaks are prepared on our HaJaTec charcoal grill",
+    "dry_aging_cabinet": "See the Dry Aging Cabinet"
   },
   "reviews": {
     "london": "I won't forget my evening here in a hurry. I was taken here for my birthday - a wonderful experience from start to finish. Very helpful and friendly staff. The steaks were cooked to perfection and the cocktails were heavenly.",

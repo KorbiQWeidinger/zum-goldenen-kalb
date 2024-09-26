@@ -3,7 +3,6 @@ import {
   DividerWithLogo,
   DividerWithText,
 } from "../components/BlockHeader";
-import { CrossLikeShape, CrossLikeShape2 } from "../components/shapes/Shapes";
 import Spacer from "../components/ui/Spacer";
 import { useTranslation } from "react-i18next";
 import { ParallaxBanner } from "react-scroll-parallax";
@@ -17,6 +16,8 @@ import {
   STEAK_DONENESS_LEFT,
   STEAK_DONENESS_RIGHT,
 } from "../constants/menu";
+import { DryAgedSteaksDisclaimer } from "../components/DryAgedSteaksDisclaimer";
+// import { useNavigate } from "react-router-dom";
 
 const FoodItem = ({
   title,
@@ -94,6 +95,7 @@ const SteakTypeColumn = ({
 
 export function Menu() {
   const { t, i18n } = useTranslation();
+  // const navigate = useNavigate();
 
   return (
     <>
@@ -116,37 +118,18 @@ export function Menu() {
           </div>
         </div>
         <DividerWithLogo />
-        <div
-          className="bg-gradient-to-r from-black via-gray-900 to-black relative overflow-hidden py-10 px-[5%] md:px-[15%] lg:px-[25%] w-full"
-          style={{
-            backgroundImage: "radial-gradient(#272727, #000000 70%)",
-          }}
+        <Spacer size="lg" />
+        <DryAgedSteaksDisclaimer />
+        <Spacer size="lg" />
+        {/* <button
+          onClick={() => navigate("/dry-aging-cabinet")}
+          className="bg-gold-500 text-white text-xl uppercase font-serif rounded-sm py-3 px-6 transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
         >
-          <div className="border-4 border-gold-500 p-8 transform">
-            <div className="transform">
-              <p className="text-gold-500 text-3xl tracking-widest uppercase mb-2 font-serif flex justify-center items-center">
-                <CrossLikeShape className="w-6 h-6 bg-gold-500 mr-3" />
-                {t("menu.steaks")}
-                <CrossLikeShape className="w-6 h-6 bg-gold-500 ml-3" />
-              </p>
-              <p className="text-2xl font-bold text-white tracking-wider uppercase mb-4">
-                {t("menu.service_1")}
-              </p>
-              <p className="text-gold-500 text-3xl uppercase mb-2 font-serif flex justify-center items-center">
-                <CrossLikeShape2 className="w-10 h-10 bg-gold-500 mr-3" />
-                {t("menu.cabinet")}
-                <CrossLikeShape2 className="w-10 h-10 bg-gold-500 ml-3" />
-              </p>
-              <p className="text-white text-lg uppercase mb-2">
-                {t("menu.special")}
-              </p>
-              <DividerWithLogo />
-              <p className="text-white text-sm uppercase mt-1 mb-2">
-                {t("menu.all")}
-              </p>
-            </div>
+          <div className="flex justify-center items-center">
+            {t("menu.dry_aging_cabinet")}
           </div>
-        </div>
+        </button>
+        <Spacer size="lg" /> */}
         <DividerWithText label={t("menu.grill")} />
         <Spacer size="lg" />
         <div className="flex flex-col xl:flex-row xl:space-x-16 justify-center items-start md:items-start space-y-0 px-[5%] md:px-[15%] lg:px-[25%] w-full">
