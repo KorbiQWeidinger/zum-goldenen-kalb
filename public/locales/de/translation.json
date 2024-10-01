@@ -3,7 +3,9 @@
     "home": "Home",
     "about": "Über uns",
     "menu": "Menü",
-    "reservations": "Reservierung"
+    "reservations": "Reservierung",
+    "reifeschrank": "Reifeschrank",
+    "meats": "Fleisch"
   },
   "footer": {
     "opening_hours": "Öffnungszeiten",
@@ -22,7 +24,9 @@
     "text_4": "Lassen Sie es sich schmecken!",
     "title_1": "UNSERE SPEISEKARTE",
     "title_2": "RESERVIERUNG",
-    "divider_1": "Buchen Sie Ihren Tisch"
+    "divider_1": "Buchen Sie Ihren Tisch",
+    "reviews": "Bewertungen",
+    "our_guests": "Unsere Gäste"
   },
   "book": {
     "text_1": "Online-Reservierung bis 6 Personen.",

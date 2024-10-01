@@ -4,6 +4,7 @@ import RotatingTextComponent from "../components/RoatatingText";
 import { useTranslation } from "react-i18next";
 import { ParallaxBanner } from "react-scroll-parallax";
 import Spacer from "../components/ui/Spacer";
+import { ReviewCarousel } from "@/components/ReviewCarousel";
 
 export function Main() {
   const navigate = useNavigate();
@@ -49,7 +50,7 @@ export function Main() {
         <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
         <button
           onClick={() => navigate("/menu")}
-          className="mt-6 text-lg w-24 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
+          className="mt-16 text-lg w-24 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
         >
           {t("home.buttons.menu")}
         </button>
@@ -73,6 +74,27 @@ export function Main() {
         >
           {t("home.buttons.book")}
         </button>
+      </div>
+      <ParallaxBanner
+        layers={[{ image: "/meats_2.jpg", speed: -25 }]}
+        className="relative flex flex-col items-center justify-center w-screen min-w-screen py-44 px-4 md:px-16 text-center"
+      >
+        <div className="absolute inset-0 bg-black opacity-40 z-10" />
+        <BlockHeader
+          label={t("header.meats")}
+          header={t("header.reifeschrank")}
+        />
+        <button
+          onClick={() => navigate("/menu")}
+          className="mt-16 text-lg px-6 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
+        >
+          {t("header.reifeschrank")}
+        </button>
+      </ParallaxBanner>
+      <div className="bg-black text-white py-44 px-4 md:px-16 text-center">
+        <BlockHeader label={t("home.our_guests")} header={t("home.reviews")} />
+        <Spacer size="xl" />
+        <ReviewCarousel />
       </div>
     </>
   );
