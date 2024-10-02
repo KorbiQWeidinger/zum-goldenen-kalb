@@ -17,28 +17,10 @@ const Header = () => {
   const [darkHeader, setDarkHeader] = useState(false);
   const navigate = useNavigate();
   const { t } = useTranslation();
-  // if we are in the dry aging cabinet, we want the header fixed
-  const [isDryAgingCabinetPage, setIsDryAgingCabinetPage] = useState(false);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   useEffect(() => {
-    setIsDryAgingCabinetPage(
-      window.location.hash.includes("dry-aging-cabinet")
-    );
-  }, []);
-
-  console.log(
-    "dry aging cabinet page",
-    isDryAgingCabinetPage,
-    window.location.hash
-  );
-
-  useEffect(() => {
-    if (isDryAgingCabinetPage) {
-      return;
-    }
-
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
@@ -64,16 +46,14 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY, isDryAgingCabinetPage]);
+  }, [lastScrollY]);
 
   return (
     <>
       <header
         className={`bg-black ${
           darkHeader ? "bg-opacity-90" : "bg-opacity-60"
-        } ${
-          isDryAgingCabinetPage ? "" : "fixed"
-        } top-0 left-0 right-0 z-50 transition-all duration-1000 ${
+        } fixed top-0 left-0 right-0 z-50 transition-all duration-1000 ${
           showHeader ? "translate-y-0" : "-translate-y-full"
         } w-screen`}
       >

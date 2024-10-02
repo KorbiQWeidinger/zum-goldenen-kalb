@@ -17,7 +17,7 @@ import {
   STEAK_DONENESS_RIGHT,
 } from "../constants/menu";
 import { DryAgedSteaksDisclaimer } from "../components/DryAgedSteaksDisclaimer";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const FoodItem = ({
   title,
@@ -95,7 +95,7 @@ const SteakTypeColumn = ({
 
 export function Menu() {
   const { t, i18n } = useTranslation();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -121,15 +121,15 @@ export function Menu() {
         <Spacer size="lg" />
         <DryAgedSteaksDisclaimer />
         <Spacer size="lg" />
-        {/* <button
+        <button
           onClick={() => navigate("/dry-aging-cabinet")}
-          className="bg-gold-500 text-white text-xl uppercase font-serif rounded-sm py-3 px-6 transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
+          className="bg-gold-500 text-white text-xl uppercase font-serif rounded-sm my-6 py-3 px-6 transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
         >
           <div className="flex justify-center items-center">
             {t("menu.dry_aging_cabinet")}
           </div>
         </button>
-        <Spacer size="lg" /> */}
+        <Spacer size="lg" />
         <DividerWithText label={t("menu.grill")} />
         <Spacer size="lg" />
         <div className="flex flex-col xl:flex-row xl:space-x-16 justify-center items-start md:items-start space-y-0 px-[5%] md:px-[15%] lg:px-[25%] w-full">
