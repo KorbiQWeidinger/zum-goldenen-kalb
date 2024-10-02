@@ -8,6 +8,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import { PropsWithChildren } from "react";
 import Header from "./components/header/Header";
 import { Footer } from "./components/Footer";
+import { AboutUs } from "./pages/AboutUs";
 
 function Page({ children }: PropsWithChildren) {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/reservations" element={<Reservations />} />
               <Route path="/menu" element={<Menu />} />
               <Route path="/impressum" element={<Impressum />} />
+              <Route path="/about-us" element={<AboutUs />} />
             </Routes>
           </Page>
         </ScrollToTop>

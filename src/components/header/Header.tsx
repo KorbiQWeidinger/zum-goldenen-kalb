@@ -91,7 +91,10 @@ const Header = () => {
             {/* Desktop Buttons */}
             <div className="hidden lg:flex flex-1 justify-end items-stretch text-white">
               <Button label={t("header.home")} onClick={() => navigate("/")} />
-              <Button label={t("header.about")} onClick={() => navigate("/")} />
+              <Button
+                label={t("header.about")}
+                onClick={() => navigate("/about-us")}
+              />
               <Button
                 label={t("header.menu")}
                 onClick={() => navigate("/menu")}

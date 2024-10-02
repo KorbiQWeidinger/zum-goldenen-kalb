@@ -57,7 +57,7 @@ export const MobileHeaderMenu = ({
       <Button
         label={t("header.about")}
         onClick={() => {
-          navigate("/");
+          navigate("/about-us");
           toggleMobileMenu();
         }}
       />
