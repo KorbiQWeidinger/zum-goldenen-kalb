@@ -36,11 +36,11 @@ export const meats: MeatInfo[] = [
     cow_image: "/meats/Hereford_Cow.png",
     position: { top: "44%", left: "24%" },
     orientation: "right",
-    de: {
+    en: {
       description:
         "The Hereford Tomahawk is distinguished by its impressive size and thickness, presenting itself with a long bone in the characteristic tomahawk shape. The pronounced marbling of the meat ensures excellent juiciness and an intense, robust flavor. These qualities make the tomahawk tender and perfectly suited for grilling.",
     },
-    en: {
+    de: {
       description:
         "Das Hereford Tomahawk zeichnet sich durch seine beeindruckende Größe und Dicke aus und präsentiert sich mit einem langen Knochen in der charakteristischen Tomahawk-Form. Die ausgeprägte Marmorierung des Fleisches sorgt für eine hervorragende Saftigkeit und einen intensiven, kräftigen Geschmack. Diese Eigenschaften machen das Tomahawk zart und perfekt geeignet zum Grillen.",
     },
