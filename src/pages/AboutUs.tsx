@@ -6,7 +6,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import Spacer from "../components/ui/Spacer";
 import { ReviewCarousel } from "@/components/ReviewCarousel";
 
-export function Main() {
+export function AboutUs() {
   const navigate = useNavigate();
   const { t } = useTranslation();
 

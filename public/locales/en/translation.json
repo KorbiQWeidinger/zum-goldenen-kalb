@@ -26,7 +26,8 @@
     "title_2": "BOOK A TABLE",
     "divider_1": "Reservation",
     "reviews": "Reviews",
-    "our_guests": "Our Guests"
+    "our_guests": "Our Guests",
+    "reviews_link": "Our Latest Reviews"
   },
   "book": {
     "text_1": "Online reservation for up to 6 people.",
@@ -57,5 +58,12 @@
     "sauces": "Sauces",
     "desserts": "Desserts",
     "grill": "All steaks are prepared on our HaJaTec charcoal grill"
+  },
+  "reviews": {
+    "london": "I won't forget my evening here in a hurry. I was taken here for my birthday - a wonderful experience from start to finish. Very helpful and friendly staff. The steaks were cooked to perfection and the cocktails were heavenly.",
+    "sabri": "Great place if you are looking for a good steak in Munich.",
+    "silvana": "We stumbled upon this place by chance and everything impressed us! Super delicious steak and there was something for everyone in the meat selection. The service was attentive and very polite! We'll be back!",
+    "lucas": "Beautiful ambiance at Viktualienmarkt! One of the best steak tartars in the city, that's all I had. Nice outdoor area.",
+    "juli": "I've been to many steakhouses in Munich, but the steak here was worlds better! It's been a long time since I've had such a tender and juicy piece of beef."
   }
 }

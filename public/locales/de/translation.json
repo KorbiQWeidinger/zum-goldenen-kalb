@@ -26,7 +26,8 @@
     "title_2": "RESERVIERUNG",
     "divider_1": "Buchen Sie Ihren Tisch",
     "reviews": "Bewertungen",
-    "our_guests": "Unsere Gäste"
+    "our_guests": "Unsere Gäste",
+    "reviews_link": "Unsere Neusten Bewertungen"
   },
   "book": {
     "text_1": "Online-Reservierung bis 6 Personen.",
@@ -57,5 +58,12 @@
     "sauces": "Saucen",
     "desserts": "Nachspeisen",
     "grill": "Alle Steaks werden auf unserem HaJaTec Holzkohlegrill zubereitet"
+  },
+  "reviews": {
+    "london": "Ich werde meinen Abend hier so schnell nicht vergessen. Ich wurde hierher zu meinem Geburtstag gebracht - eine wunderbare Erfahrung von Anfang bis Ende. Sehr hilfsbereites und freundliches Personal. Die Steaks waren perfekt zubereitet und die Cocktails waren himmlisch.",
+    "sabri": "Ein großartiger Ort, wenn Sie ein gutes Steak in München suchen.",
+    "silvana": "Aus Zufall reingeschaut und alles hat uns überzeugt! Super leckeres Steak und bei der Fleisch Auswahl war für jeden was dabei. Der Service war zuvorkommend und sehr höflich! Wir kommen wieder!",
+    "lucas": "Schönes Ambiente am Viktualienmarkt! Eines der besten Steak Tartars der Stadt, mehr hatte ich nicht. Schöner Außenbereich",
+    "juli": "Ich war jetzt schon in vielen Steakhouses in München, aber das Steak hier war um Welten besser! Ich habe wirklich lange nicht mehr so eine weiche und saftige Kuh essen dürfen."
   }
 }
