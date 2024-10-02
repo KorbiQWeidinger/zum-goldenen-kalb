@@ -85,7 +85,7 @@ export function Main() {
           header={t("header.reifeschrank")}
         />
         <button
-          onClick={() => navigate("/menu")}
+          onClick={() => navigate("/dry-aging-cabinet")}
           className="mt-16 text-lg px-6 h-12 bg-transparent border border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
         >
           {t("header.reifeschrank")}

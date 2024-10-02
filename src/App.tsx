@@ -9,6 +9,7 @@ import { PropsWithChildren } from "react";
 import Header from "./components/header/Header";
 import { Footer } from "./components/Footer";
 import { AboutUs } from "./pages/AboutUs";
+import DryAgingCabinet from "./pages/DryAgingCabinet";
 
 function Page({ children }: PropsWithChildren) {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route path="/menu" element={<Menu />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/dry-aging-cabinet" element={<DryAgingCabinet />} />
             </Routes>
           </Page>
         </ScrollToTop>
