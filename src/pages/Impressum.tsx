@@ -26,8 +26,8 @@ export function Impressum() {
             USt.-Id. Nr.: DE368612708
             <Spacer size="lg" />
             <p className="font-semibold">Öffnungszeiten: </p>
-            Di – Fr: 17:00 Uhr – 01:00 Uhr <br />
-            Samstags ab 12:00 Uhr <br />
+            Di – Sa: 17:00 Uhr – 01:00 Uhr <br />
+            {/*Samstags ab 12:00 Uhr <br />*/}
             Sonntag und Montag Ruhetag
             <Spacer size="lg" />
             <p className="font-semibold">

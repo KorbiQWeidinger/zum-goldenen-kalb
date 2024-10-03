@@ -9,7 +9,7 @@
   },
   "footer": {
     "opening_hours": "Öffnungszeiten",
-    "open_1": "DI – FR: 17:00 – 01:00 Uhr",
+    "open_1": "DI – SA: 17:00 – 01:00 Uhr",
     "open_2": "SA: 12:00 – 01:00 Uhr"
   },
   "home": {
@@ -39,7 +39,7 @@
     "text_7": "Sie werden über Ihre Reservierung per E-Mail informiert.",
     "reservations": "Online Reservieren",
     "opening_hours": {
-      "weekday_hours": "Di – Fr: 17.00 – 01.00 Uhr",
+      "weekday_hours": "Di – Sa: 17.00 – 01.00 Uhr",
       "saturday_hours": "Sa: 12.00 – 01.00 Uhr",
       "kitchen_hours": "Küche Di - Sa: 17.00 - 23.00 Uhr",
       "terrace_menu_hours": "Sa: 12.00 - 17.00 Uhr Terrassenkarte",

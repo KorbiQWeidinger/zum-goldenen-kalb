@@ -49,7 +49,7 @@ export function Footer() {
             {t("footer.opening_hours")}:
           </p>
           <p className="mb-0.5 md:mb-1">{t("footer.open_1")}</p>
-          <p>{t("footer.open_2")}</p>
+          {/*<p>{t("footer.open_2")}</p>*/}
         </div>
       </div>
     </footer>

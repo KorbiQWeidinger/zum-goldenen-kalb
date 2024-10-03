@@ -9,7 +9,7 @@
   },
   "footer": {
     "opening_hours": "Opening hours",
-    "open_1": "TUE – FRI: 5:00 PM – 1:00 AM",
+    "open_1": "TUE – SAT: 5:00 PM – 1:00 AM",
     "open_2": "SAT: 12:00 PM – 1:00 AM"
   },
   "home": {
@@ -39,7 +39,7 @@
     "text_7": "We send you a confirmation e-mail.",
     "reservations": "Online Reservations",
     "opening_hours": {
-      "weekday_hours": "Tue – Fri: 5.00 pm – 1.00 am",
+      "weekday_hours": "Tue – Sat: 5.00 pm – 1.00 am",
       "saturday_hours": "Sat: 12.00 pm – 1.00 am",
       "kitchen_hours": "Kitchen Tue - Sat: 5.00 pm - 11.00 pm",
       "terrace_menu_hours": "Sat: 12.00 pm - 5.00 pm Terras Menu",

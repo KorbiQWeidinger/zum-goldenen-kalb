@@ -53,11 +53,11 @@ export function Reservations() {
             </div>
             <div className="font-times flex flex-col items-center  text-lg lg:text-xl">
               <div>{t("book.opening_hours.weekday_hours")}</div>
-              <div>{t("book.opening_hours.saturday_hours")}</div>
+              {/*<div>{t("book.opening_hours.saturday_hours")}</div>*/}
               <Spacer size="lg" />
               <div>{t("book.opening_hours.kitchen_hours")}</div>
               <Spacer size="lg" />
-              <div>{t("book.opening_hours.terrace_menu_hours")}</div>
+              {/*<div>{t("book.opening_hours.terrace_menu_hours")}</div>*/}
               <Spacer size="lg" />
               <div>{t("book.opening_hours.closed_days")}</div>
             </div>
