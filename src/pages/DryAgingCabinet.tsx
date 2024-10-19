@@ -51,9 +51,9 @@ function MeatInfoModal({
     <div
       className={`${
         isLargeScreen
-          ? "relative m-8"
+          ? "relative mx-8"
           : "fixed inset-0 bg-gray-900 bg-opacity-40"
-      } text-white flex items-center justify-center p-4 z-20`}
+      } text-white flex items-center justify-center p-4 z-[100]`}
     >
       <div
         className={`bg-black shadow-xl relative rounded-md border border-gold-500 border-opacity-80 w-full ${
@@ -68,14 +68,14 @@ function MeatInfoModal({
             <MdClose size={24} />
           </button>
         )}
-        <div className="p-4">
+        <div className="p-4 max-h-[80vh] overflow-y-auto">
           <Spacer size="md" />
           <DividerWithLogo />
           <h2 className="text-2xl text-white font-bold mb-4">{meat.name}</h2>
           <Spacer size="sm" />
           <img
-            className={`h-full aspect-square mb-4 mx-auto relative rounded-md ${
-              isLargeScreen ? "w-1/2" : "w-[70%]"
+            className={`w-full max-h-[40vh] object-contain mb-4 mx-auto relative rounded-md ${
+              isLargeScreen ? "max-w-[50%]" : "max-w-[70%]"
             }`}
             src={meat.image}
             alt={meat.name}
