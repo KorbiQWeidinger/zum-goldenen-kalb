@@ -17,7 +17,7 @@ export function Impressum() {
           <div className="flex-1 text-lg md:text-xl text-left">
             FM Gastronomie GmbH
             <br />
-            Geschäftsführer Ferenc Barbay und Markus Kirchberger
+            Geschäftsführer: Ferenc Barbay
             <br />
             Utzschneiderstraße 1 80469 München
             <Spacer size="lg" />
@@ -33,7 +33,7 @@ export function Impressum() {
             <p className="font-semibold">
               Inhaltlich Verantwortliche gemäß § 10 Absatz 3 MDStV:
             </p>
-            Ferenc Barbay und Markus Kirchberger
+            Ferenc Barbay
             <Spacer size="lg" />
             Tel.: <a href="tel:+498923542290">+49 89 2354 2290</a> <br />
             E-Mail: info@zumgoldenenkalb.de <br />
