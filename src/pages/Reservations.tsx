@@ -3,9 +3,15 @@ import Spacer from "../components/ui/Spacer";
 import QuandooBookingWidget from "../components/BookingWidget";
 import { useTranslation } from "react-i18next";
 import { ParallaxBanner } from "react-scroll-parallax";
+import { useEffect } from "react";
+import { analytics } from "@/constants/analytics";
 
 export function Reservations() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    analytics.track("reservations_page_visit");
+  }, []);
 
   return (
     <>
