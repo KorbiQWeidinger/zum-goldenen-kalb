@@ -63,7 +63,7 @@ export function Main() {
             ),
           },
         ]}
-        className="h-[calc(90vw*16/9)] flex flex-col items-center justify-center sm:h-screen sm:min-h-screen sm:mt-0"
+        className="h-[calc(90vw*16/9)] mt-24 flex flex-col items-center justify-center sm:h-screen sm:min-h-screen sm:mt-0"
       >
         <img
           src={"/kalb-text.png"}
