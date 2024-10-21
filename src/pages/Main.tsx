@@ -5,10 +5,13 @@ import { useTranslation } from "react-i18next";
 import { ParallaxBanner } from "react-scroll-parallax";
 import Spacer from "../components/ui/Spacer";
 import { ReviewCarousel } from "@/components/ReviewCarousel";
+import { useMediaQuery } from "@react-hookz/web";
 
 export function Main() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  const isMobile = useMediaQuery("(max-width: 640px)");
 
   return (
     <>
@@ -41,19 +44,27 @@ export function Main() {
             speed: -25,
             children: (
               <video
-                src="/kalb-main-video.mp4"
+                src={
+                  isMobile
+                    ? "/kalb-main-video-mobile.mp4"
+                    : "/kalb-main-video.mp4"
+                }
                 autoPlay
                 loop
                 muted
                 playsInline
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: isMobile ? "contain" : "cover",
+                  backgroundColor: "black",
+                }}
               />
             ),
           },
         ]}
-        className="bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen"
+        className="h-[calc(90vw*16/9)] flex flex-col items-center justify-center sm:h-screen sm:min-h-screen sm:mt-0"
       >
-        <div className="absolute inset-0 bg-black opacity-40 z-10" />
         <img
           src={"/kalb-text.png"}
           className="logo w-full px-4 md:px-0 md:w-2/3 mx-32 mt-8 z-20"
@@ -67,7 +78,6 @@ export function Main() {
         >
           {t("home.buttons.reservations")}
         </button>
-        x
       </ParallaxBanner>
       <div
         id="about"
