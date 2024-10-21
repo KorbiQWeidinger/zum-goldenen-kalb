@@ -36,8 +36,6 @@ export default function FadingImages({
     setLoaded(true);
   };
 
-  console.log(current);
-
   return (
     <div className={`relative w-full h-full ${className}`}>
       {images.map((src, index) => (

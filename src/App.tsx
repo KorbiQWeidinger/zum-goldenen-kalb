@@ -10,6 +10,7 @@ import Header from "./components/header/Header";
 import { Footer } from "./components/Footer";
 import { AboutUs } from "./pages/AboutUs";
 import DryAgingCabinet from "./pages/DryAgingCabinet";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 function Page({ children }: PropsWithChildren) {
   return (
@@ -24,6 +25,7 @@ function Page({ children }: PropsWithChildren) {
 function App() {
   return (
     <Router>
+      <GoogleAnalytics />
       <ParallaxProvider>
         <ScrollToTop>
           <Page>
