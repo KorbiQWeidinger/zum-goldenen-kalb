@@ -12,8 +12,45 @@ export function Main() {
 
   return (
     <>
+      {/* SEO Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          name: "Zum Goldenen Kalb – Experience Our Steakhouse",
+          description:
+            "Take a virtual tour of our New York-style steakhouse at Viktualienmarkt.",
+          thumbnailUrl:
+            "https://www.zumgoldenenkalb.de/images/kalb-bg-worldmap.jpg",
+          uploadDate: "2023-10-01",
+          contentUrl: "https://www.zumgoldenenkalb.de/kalb-main-video.mp4",
+          embedUrl: "https://www.zumgoldenenkalb.de/",
+          publisher: {
+            "@type": "Organization",
+            name: "Zum Goldenen Kalb",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://www.zumgoldenenkalb.de/kalb-head-gold-square.png",
+            },
+          },
+        })}
+      </script>
       <ParallaxBanner
-        layers={[{ image: "/kalb-bg-worldmap.jpg", speed: -25 }]}
+        layers={[
+          {
+            speed: -25,
+            children: (
+              <video
+                src="/kalb-main-video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            ),
+          },
+        ]}
         className="bg-center h-screen pt-24 flex flex-col items-center justify-center min-h-screen"
       >
         <div className="absolute inset-0 bg-black opacity-40 z-10" />
