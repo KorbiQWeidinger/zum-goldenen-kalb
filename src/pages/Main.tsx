@@ -65,13 +65,13 @@ export function Main() {
         ]}
         className="h-[calc(90vw*16/9)] mt-24 flex flex-col items-center justify-center sm:h-screen sm:min-h-screen sm:mt-0"
       >
+        <div className="absolute inset-0 bg-black opacity-30 z-10" />
         <img
-          src={"/kalb-text.png"}
-          className="logo w-full px-4 md:px-0 md:w-2/3 mx-32 mt-8 z-20"
+          src={"/zum-goldenen-kalb-text.svg"}
+          className="logo w-full px-4 md:px-0 md:w-2/3 lg:w-1/2 mx-32 mt-8 md:mt-16 lg:mt-28 z-20"
           alt="Zum Goldenen Kalb"
         />
-        <Spacer size="xl" />
-        <Spacer size="xl" />
+        <Spacer size="2xl" />
         <button
           onClick={() => navigate("/reservations")}
           className="text-2xl w-48 h-16 bg-transparent border-2 border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"

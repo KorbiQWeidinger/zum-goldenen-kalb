@@ -7,7 +7,6 @@ const QuandooBookingWidget = () => {
     const scriptId = "quandoo-booking-script";
 
     if (!scriptAdded.current) {
-      console.log("Adding script");
       // Only add the script if it hasn't been added
       const script = document.createElement("script");
       script.id = scriptId;
