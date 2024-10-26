@@ -11,6 +11,7 @@ import { Footer } from "./components/Footer";
 import { AboutUs } from "./pages/AboutUs";
 import DryAgingCabinet from "./pages/DryAgingCabinet";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import { OpeningHoursDialog } from "./components/OpeningHoursDialog";
 
 function Page({ children }: PropsWithChildren) {
   return (
@@ -37,6 +38,7 @@ function App() {
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/dry-aging-cabinet" element={<DryAgingCabinet />} />
             </Routes>
+            <OpeningHoursDialog />
           </Page>
         </ScrollToTop>
       </ParallaxProvider>

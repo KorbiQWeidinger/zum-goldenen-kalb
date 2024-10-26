@@ -58,8 +58,19 @@ export function Reservations() {
               <div>{t("book.opening_hours.kitchen_hours")}</div>
               <Spacer size="lg" />
               {/*<div>{t("book.opening_hours.terrace_menu_hours")}</div>*/}
-              <Spacer size="lg" />
               <div>{t("book.opening_hours.closed_days")}</div>
+              <Spacer size="xl" />
+              <div className="text-gold-500">
+                {t("opening_hours_toast.title")}
+              </div>
+              <Spacer size="lg" />
+              <div className="text-center">
+                <p>{t("opening_hours_toast.line_1")}</p>
+                <p>{t("opening_hours_toast.line_2")}</p>
+                <p>{t("opening_hours_toast.line_3")}</p>
+                <p>{t("opening_hours_toast.line_4")}</p>
+              </div>
+              <Spacer size="lg" />
             </div>
           </div>
         </div>

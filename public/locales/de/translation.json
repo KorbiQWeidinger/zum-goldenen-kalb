@@ -66,5 +66,12 @@
     "silvana": "Aus Zufall reingeschaut und alles hat uns überzeugt! Super leckeres Steak und bei der Fleisch Auswahl war für jeden was dabei. Der Service war zuvorkommend und sehr höflich! Wir kommen wieder!",
     "lucas": "Schönes Ambiente am Viktualienmarkt! Eines der besten Steak Tartars der Stadt, mehr hatte ich nicht. Schöner Außenbereich",
     "juli": "Ich war jetzt schon in vielen Steakhouses in München, aber das Steak hier war um Welten besser! Ich habe wirklich lange nicht mehr so eine weiche und saftige Kuh essen dürfen."
+  },
+  "opening_hours_toast": {
+    "title": "Unsere Öffnungszeiten zu Weihnachten, Silvester & Neujahr",
+    "line_1": "Geschlossen an Heiligabend vom 24.12. bis 26.12.",
+    "line_2": "Geöffnet vom 27.12. bis 31.12. ab 17:00 Uhr.",
+    "line_3": "Geschlossen (Betriebsurlaub) vom 01.01. bis 12.01.",
+    "line_4": "Am Montag, den 13.01., geöffnet, und ab dem 14.01. wie gewohnt geöffnet."
   }
 }

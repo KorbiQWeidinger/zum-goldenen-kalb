@@ -18,6 +18,7 @@ function LanguageSwitcher() {
   return (
     <button
       onClick={() => i18n.changeLanguage(currentLang === "en" ? "de" : "en")}
+      className="focus:outline-none"
     >
       <img
         src={`/${currentLang === "en" ? "de" : "en"}.jpg`}

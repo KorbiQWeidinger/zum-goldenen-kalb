@@ -66,5 +66,12 @@
     "silvana": "We stumbled upon this place by chance and everything impressed us! Super delicious steak and there was something for everyone in the meat selection. The service was attentive and very polite! We'll be back!",
     "lucas": "Beautiful ambiance at Viktualienmarkt! One of the best steak tartars in the city, that's all I had. Nice outdoor area.",
     "juli": "I've been to many steakhouses in Munich, but the steak here was worlds better! It's been a long time since I've had such a tender and juicy piece of beef."
+  },
+  "opening_hours_toast": {
+    "title": "Our Opening Hours for Christmas & New Year",
+    "line_1": "Closed from Christmas Eve, Dec 24 to Dec 26.",
+    "line_2": "Open from Dec 27 to Dec 31 from 5:00 PM.",
+    "line_3": "Closed (holiday break) from Jan 1 to Jan 12.",
+    "line_4": "Open on Monday, Jan 13, and from Jan 14 onward, open as usual."
   }
 }
