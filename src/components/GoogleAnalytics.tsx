@@ -1,24 +1,24 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
-declare global {
-  interface Window {
-    gtag: (...args: unknown[]) => void;
-  }
-}
+import ReactGA from "react-ga4";
 
 const GA_MEASUREMENT_ID = "G-FZ7L7B5XJN";
 
 export default function GoogleAnalytics() {
-  const path = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("config", GA_MEASUREMENT_ID, {
-        page_path: path,
-      });
-    }
-  }, [path]);
+    // Initialize GA4
+    ReactGA.initialize(GA_MEASUREMENT_ID);
+  }, []);
 
-  return <></>;
+  useEffect(() => {
+    // Send pageview with a location
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+  }, [location]);
+
+  return null;
 }
