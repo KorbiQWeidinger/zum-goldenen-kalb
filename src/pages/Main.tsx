@@ -74,7 +74,7 @@ export function Main() {
         <Spacer size="2xl" />
         <button
           onClick={() => navigate("/reservations")}
-          className="text-2xl w-48 h-16 bg-transparent border-2 border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20"
+          className="text-2xl w-48 h-16 min-h-16 bg-transparent border-2 border-white text-white relative overflow-hidden hover:bg-white hover:text-black transition-colors duration-300 z-20 sm:mb-10"
         >
           {t("home.buttons.reservations")}
         </button>

@@ -5,6 +5,7 @@ import { t } from "i18next";
 import { DividerWithLogo } from "./BlockHeader";
 import Spacer from "./ui/Spacer";
 import Marquee from "@/components/ui/marquee";
+import { Truncate } from "./ui/truncate";
 
 type Review = {
   id: number;
@@ -17,83 +18,91 @@ type Review = {
   url: string;
 };
 
-const ReviewCard = ({ review }: { review: Review }) => {
+const LinkToMapsCard = () => {
   return (
     <Card
       className="max-w-[40vh] max-h-[40vh] min-w-[40vh] min-h-[40vh] aspect-square bg-gradient-to-br from-black via-gray-950 to-black border border-[#DAA520] shadow-lg dark:border-slate-800 cursor-pointer"
-      onClick={() => window.open(review.url, "_blank")}
+      onClick={() => window.open("", "_blank")}
     >
       <CardContent className="p-6 flex flex-col justify-between h-full">
-        {review.rating ? (
-          <>
-            <div className="flex-grow">
-              <div className="flex items-center mb-4">
-                <Avatar className="h-10 w-10 mr-4 rounded-none">
-                  <AvatarImage
-                    src={review.avatar}
-                    alt={review.name}
-                    className="rounded-none"
-                  />
-                  <AvatarFallback className="rounded-none">
-                    {review.name.charAt(0)}
-                  </AvatarFallback>
-                </Avatar>
-                <div>
-                  <h3 className="font-semibold text-white text-left">
-                    {review.name}
-                  </h3>
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-4 h-4 ${
-                          i < (review.rating ?? 5)
-                            ? "text-[#DAA520] fill-[#DAA520]"
-                            : "text-gray-500"
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <p className="text-sm text-gray-300 mb-4 text-left overflow-hidden line-clamp-3">
-                {review.review}
-              </p>
-            </div>
-            <div className="flex space-x-2">
-              {review.image1 && (
-                <div className="w-1/2 aspect-square overflow-hidden rounded-md shadow-md">
-                  <img
-                    src={review.image1}
-                    alt="Review"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              )}
-              {review.image2 && (
-                <div className="w-1/2 aspect-square overflow-hidden rounded-md shadow-md">
-                  <img
-                    src={review.image2}
-                    alt="Review"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              )}
-            </div>
-          </>
-        ) : (
-          <div className="flex flex-col items-center justify-center h-full">
-            <DividerWithLogo />
-            <Spacer size="lg" />
-            <p className="text-xl font-semibold text-center text-white">
-              {t("home.reviews_link")}
-            </p>
-          </div>
-        )}
+        <div className="flex flex-col items-center justify-center h-full">
+          <DividerWithLogo />
+          <Spacer size="lg" />
+          <p className="text-xl font-semibold text-center text-white">
+            {t("home.reviews_link")}
+          </p>
+        </div>
       </CardContent>
     </Card>
   );
 };
+
+function ReviewCard({ review }: { review: Review }) {
+  return (
+    <div className="w-[40vh] h-[40vh] p-4 flex flex-col gap-2 items-end border bg-gradient-to-br from-black via-gray-950 to-black border-[#DAA520] shadow-lg dark:border-slate-800 cursor-pointer rounded-lg">
+      <div className="w-full">
+        {/* Avatar, Name, Stars */}
+        <div className="flex items-center h-full">
+          <Avatar className="h-10 w-10 mr-4 rounded-none">
+            <AvatarImage
+              src={review.avatar}
+              alt={review.name}
+              className="rounded-none"
+            />
+            <AvatarFallback className="rounded-none">
+              {review.name.charAt(0)}
+            </AvatarFallback>
+          </Avatar>
+          <div>
+            <h3 className="font-semibold text-white text-left truncate">
+              {review.name}
+            </h3>
+            <div className="flex">
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className={`w-4 h-4 ${
+                    i < (review.rating ?? 5)
+                      ? "text-[#DAA520] fill-[#DAA520]"
+                      : "text-gray-500"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <Truncate
+        className="w-full h-full text-sm text-gray-300"
+        text={review.review}
+      />
+      <div className="w-full h-full flex justify-start gap-4">
+        <div className="w-1/2">
+          {review.image1 && (
+            <div className="w-full aspect-square rounded-md">
+              <img
+                src={review.image1}
+                alt="Review"
+                className="w-full h-full rounded-lg object-cover max-w-full max-h-full"
+              />
+            </div>
+          )}
+        </div>
+        <div className="w-1/2">
+          {review.image2 && (
+            <div className="w-full aspect-square rounded-md">
+              <img
+                src={review.image2}
+                alt="Review"
+                className="w-full h-full object-cover max-w-full max-h-full"
+              />
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export function ReviewCarousel() {
   const reviews: Review[] = [
@@ -143,13 +152,6 @@ export function ReviewCarousel() {
       image1: "/reviews/image1-juli.png",
       url: "https://maps.app.goo.gl/eRJYGNEtp9znbqdT6",
     },
-    {
-      id: 6,
-      name: "",
-      avatar: "",
-      review: t("home.reviews_link"),
-      url: "https://g.co/kgs/pP5eYfX",
-    },
   ];
 
   return (
@@ -176,6 +178,9 @@ export function ReviewCarousel() {
             <ReviewCard review={review} />
           </div>
         ))}
+        <div className="p-1">
+          <LinkToMapsCard />
+        </div>
       </Marquee>
     </div>
   );
