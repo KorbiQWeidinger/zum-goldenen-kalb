@@ -34,7 +34,6 @@ export function OpeningHoursDialog() {
           <div className="text-lg text-white text-center">
             <p>{t("opening_hours_toast.line_1")}</p>
             <p>{t("opening_hours_toast.line_2")}</p>
-            <p>{t("opening_hours_toast.line_3")}</p>
             <p>{t("opening_hours_toast.line_4")}</p>
           </div>
           <Spacer size="lg" />
