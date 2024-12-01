@@ -52,13 +52,19 @@
     "service_1": "WE WILL ACCOMPANY YOU TO THE",
     "cabinet": "DRY-AGE CABINETS",
     "special": "WITH DAILY CHANGING SPECIAL CUTS",
-    "all": "ALL STEAKS ALSO AVAILABLE AS SURF&TURF WITH WILD PRAWNS 23,00 EACH",
+    "all": "ALL STEAKS ALSO AVAILABLE AS SURF&TURF WITH BLACK TIGER PRAWNS 14 EACH",
     "sides": "Sides",
     "classics": "Classics",
     "sauces": "Sauces",
     "desserts": "Desserts",
     "grill": "All steaks are prepared on our HaJaTec charcoal grill",
-    "dry_aging_cabinet": "Dry Aging Cabinet"
+    "dry_aging_cabinet": "Dry Aging Cabinet",
+    "oyster_special": "Oyster Special",
+    "dessertsInAGlass": "DESSERTS IN A GLASS",
+    "coffeeAndTea": "COFFEE AND TEA",
+    "spirits": "SPIRITS",
+    "warmCitchen": "HOT KITCHEN UNTIL 10:30 PM",
+    "dessertUntil": "DESSERTS UNTIL 11:00 PM"
   },
   "reviews": {
     "london": "I won't forget my evening here in a hurry. I was taken here for my birthday - a wonderful experience from start to finish. Very helpful and friendly staff. The steaks were cooked to perfection and the cocktails were heavenly.",
