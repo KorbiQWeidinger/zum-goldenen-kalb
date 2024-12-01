@@ -51,12 +51,12 @@ export const STARTERS_RIGHT = {
     {
       title: "CLASSIC CEASAR SALAD",
       description: "Parmesan | Croûtons | Speck",
-      price: 15,
+      price: 11,
     },
     {
       title: "FRANZÖSISCHE ZWIEBELSUPPE",
       description: "Buttercroûtons | Gruyère | Schnittlauch",
-      price: 11,
+      price: 15,
     },
     {
       title: "MARINIERTE BEETE & FRISCHKÄSE",
@@ -74,12 +74,12 @@ export const STARTERS_RIGHT = {
     {
       title: "CLASSIC CAESAR SALAD",
       description: "parmesan cheese | croutons | bacon",
-      price: 15,
+      price: 11,
     },
     {
       title: "FRENCH ONION SOUP",
       description: "croutons | gruyère cheese | chives",
-      price: 11,
+      price: 15,
     },
     {
       title: "MARINATED BEETROOT AND CREAM CHEESE",
@@ -121,12 +121,12 @@ export const CLASSICS_LEFT = {
   en: [
     {
       title: "PRIME RIBEYE STEAK",
-      description: "US angus - 270g / ≈ 9 oz",
+      description: "US angus - 270g ≈ 9 oz",
       price: 59,
     },
     {
       title: "PRIME FILET STEAK",
-      description: "australian angus - 200g / ≈ 7 oz",
+      description: "Australian Angus - 200g ≈ 7 oz",
       price: 57,
     },
     {
