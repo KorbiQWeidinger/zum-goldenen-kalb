@@ -5,10 +5,7 @@ export function PrivacyPolicy() {
   return (
     <>
       <div className="bg-black text-white py-32 md:py-24 px-4 md:px-16 text-center">
-        <BlockHeader
-          label="Datenschutzerklärung"
-          header="DATENSCHUTZERKLÄRUNG"
-        />
+        <BlockHeader label="Datenschutzerklärung" header="DATENSCHUTZ" />
         <Spacer size="lg" />
         <div className="text-left max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-4">1. Verantwortlicher</h2>
