@@ -32,6 +32,13 @@ export function Footer() {
           >
             Impressum
           </a>
+          {" | "}
+          <a
+            className="hover:cursor-pointer"
+            onClick={() => navigate("/privacy-policy")}
+          >
+            Datenschutzerklärung
+          </a>
           <p className="md:mt-2">
             <a
               href="https://korbiqweidinger.github.io/"

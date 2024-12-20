@@ -12,6 +12,7 @@ import { AboutUs } from "./pages/AboutUs";
 import DryAgingCabinet from "./pages/DryAgingCabinet";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import { OpeningHoursDialog } from "./components/OpeningHoursDialog";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 
 function Page({ children }: PropsWithChildren) {
   return (
@@ -37,6 +38,7 @@ function App() {
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/dry-aging-cabinet" element={<DryAgingCabinet />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
             <OpeningHoursDialog />
           </Page>
