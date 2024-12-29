@@ -9,6 +9,7 @@ import {
 import { DividerWithLogo } from "./BlockHeader";
 import Spacer from "./ui/Spacer";
 import LanguageSwitcher from "./header/LanguageSwitcher";
+import { PDFMenuDownloadButton } from "./menu/PDFMenuDownloadButton";
 
 export function OpeningHoursDialog() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,12 @@ export function OpeningHoursDialog() {
           <div className="text-lg text-white text-center">
             <p>{t("opening_hours_toast.line_1")}</p>
             <p>{t("opening_hours_toast.line_2")}</p>
+            <p>{t("opening_hours_toast.line_3")}</p>
             <p>{t("opening_hours_toast.line_4")}</p>
+          </div>
+          <Spacer size="lg" />
+          <div className="flex justify-center items-center">
+            <PDFMenuDownloadButton />
           </div>
           <Spacer size="lg" />
           <div className="flex justify-center items-center">
