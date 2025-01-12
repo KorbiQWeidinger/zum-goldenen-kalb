@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -12,49 +12,52 @@ import LanguageSwitcher from "./LanguageSwitcher";
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
+  const [headerState, setHeaderState] = useState({ show: true, dark: false });
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [darkHeader, setDarkHeader] = useState(false);
   const navigate = useNavigate();
   const { t } = useTranslation();
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > 200) {
-        setDarkHeader(true);
-      } else {
-        setDarkHeader(false);
-      }
-
-      if (currentScrollY > lastScrollY && currentScrollY > 400) {
-        // Scrolling down
-        setShowHeader(false);
-      } else {
-        // Scrolling up
-        setShowHeader(true);
-      }
-
+  const handleScroll = useCallback(() => {
+    const currentScrollY = window.scrollY;
+    requestAnimationFrame(() => {
+      setHeaderState({
+        dark: currentScrollY > 200,
+        show: !(currentScrollY > lastScrollY && currentScrollY > 400),
+      });
       setLastScrollY(currentScrollY);
+    });
+  }, [lastScrollY]);
+
+  useEffect(() => {
+    let timeoutId: number;
+    const throttledScroll = () => {
+      if (!timeoutId) {
+        timeoutId = window.setTimeout(() => {
+          handleScroll();
+          timeoutId = 0;
+        }, 100);
+      }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", throttledScroll, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", throttledScroll);
+      if (timeoutId) window.clearTimeout(timeoutId);
     };
-  }, [lastScrollY]);
+  }, [handleScroll]);
 
   return (
     <>
       <header
         className={`bg-black ${
-          darkHeader ? "bg-opacity-90" : "bg-opacity-60"
+          headerState.dark ? "bg-opacity-90" : "bg-opacity-60"
         } fixed left-0 right-0 z-50 transition-all duration-1000 ${
-          showHeader ? "top-[40px]" : "-translate-y-full"
+          headerState.show
+            ? "top-[40px] translate-y-0"
+            : "top-[40px] -translate-y-[calc(100%+40px)]"
         } w-screen`}
       >
         <div className="mx-auto px-8 lg:px-16">
