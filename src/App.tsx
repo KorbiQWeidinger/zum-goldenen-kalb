@@ -12,6 +12,25 @@ import { AboutUs } from "./pages/AboutUs";
 import DryAgingCabinet from "./pages/DryAgingCabinet";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { useTranslation } from "react-i18next";
+
+function Banner() {
+  const { i18n } = useTranslation();
+
+  if (i18n.language === "en") {
+    return (
+      <div className="bg-gold-500 text-white text-center py-2 fixed top-0 left-0 right-0 z-50 h-[40px]">
+        We are open on Monday, January 13th!
+      </div>
+    );
+  }
+
+  return (
+    <div className="bg-gold-500 text-white text-center py-2 fixed top-0 left-0 right-0 z-50 h-[40px]">
+      Wir sind am Montag, dem 13. Januar geöffnet!
+    </div>
+  );
+}
 
 function Page({ children }: PropsWithChildren) {
   return (
@@ -30,6 +49,7 @@ function App() {
       <ParallaxProvider>
         <ScrollToTop>
           <Page>
+            <Banner />
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/reservations" element={<Reservations />} />
