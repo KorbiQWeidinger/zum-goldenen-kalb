@@ -20,11 +20,13 @@ export function OpeningHours() {
       <div className="bg-black text-white py-44 px-4 md:px-16 text-center">
         <div className="max-w-3xl mx-auto">
           <div className="text-gold-500 text-lg mb-8">
-            <p className="mb-4 uppercase">{t("footer.opening_hours")}:</p>
-            <p className="mb-2">{t("footer.open_1")}</p>
-            {/*<p>{t("footer.open_2")}</p>*/}
-            <p className="mb-2">{t("book.opening_hours.kitchen_hours")}</p>
-            <p className="mb-2">{t("book.opening_hours.closed_days")}</p>
+            <p className="mb-4 uppercase">{t("openingHours.title")}</p>
+            <p className="mb-2">{t("openingHours.regularHours.open")}</p>
+            <p className="mb-2">
+              {t("openingHours.regularHours.kitchen_hours")}
+            </p>
+            <p className="mb-2">{t("openingHours.regularHours.closed")}</p>
+            <p className="mb-2">{t("openingHours.regularHours.summer")}</p>
           </div>
           <div className="text-gold-500 text-lg mt-16">
             <p className="mb-4 uppercase">

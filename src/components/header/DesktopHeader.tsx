@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button } from "./NavButton";
 import { IgButton } from "./IgButton";
@@ -7,7 +6,7 @@ import { FbButton } from "./FbButton";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Banner } from "./Banner";
 import { useBannerVisibility } from "../../hooks/useBannerVisibility";
-
+import { useNavigateWithLang } from "../../hooks/useNavigateWithLang";
 interface DesktopHeaderProps {
   show: boolean;
   isDark: boolean;
@@ -15,7 +14,7 @@ interface DesktopHeaderProps {
 
 export function DesktopHeader({ show, isDark }: DesktopHeaderProps) {
   const [isHovered, setIsHovered] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigateWithLang();
   const { t } = useTranslation();
   const { message: bannerMessage } = useBannerVisibility();
 

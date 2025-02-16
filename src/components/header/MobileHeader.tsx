@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "./NavButton";
@@ -10,7 +9,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Spacer from "../ui/Spacer";
 import { Banner } from "./Banner";
 import { useBannerVisibility } from "../../hooks/useBannerVisibility";
-
+import { useNavigateWithLang } from "../../hooks/useNavigateWithLang";
 interface MobileHeaderProps {
   show: boolean;
   isDark: boolean;
@@ -18,7 +17,7 @@ interface MobileHeaderProps {
 
 // Private component only used within MobileHeader
 function MobileMenu({ onClose }: { onClose: () => void }) {
-  const navigate = useNavigate();
+  const navigate = useNavigateWithLang();
   const { t } = useTranslation();
   const { message: bannerMessage } = useBannerVisibility();
 
@@ -76,7 +75,7 @@ function MobileMenu({ onClose }: { onClose: () => void }) {
 export function MobileHeader({ show, isDark }: MobileHeaderProps) {
   const [isHovered, setIsHovered] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigateWithLang();
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 

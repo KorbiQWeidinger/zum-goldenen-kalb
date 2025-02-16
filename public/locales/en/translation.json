@@ -38,14 +38,7 @@
     "text_5": "There are no time restrictions after 20:00.",
     "text_6": "Your team Zum Goldenen Kalb",
     "text_7": "We send you a confirmation e-mail.",
-    "reservations": "Online Reservations",
-    "opening_hours": {
-      "weekday_hours": "Tue – Sat: 5.00 pm – 1.00 am",
-      "saturday_hours": "Sat: 12.00 pm – 1.00 am",
-      "kitchen_hours": "Kitchen Tue - Sat: 5.00 pm - 10.30 pm",
-      "terrace_menu_hours": "Sat: 12.00 pm - 5.00 pm Terras Menu",
-      "closed_days": "Sun - Mon: Closed"
-    }
+    "reservations": "Online Reservations"
   },
   "menu": {
     "starters": "Starters",
@@ -77,14 +70,10 @@
   "openingHours": {
     "title": "Opening Hours",
     "regularHours": {
-      "title": "Regular Opening Hours",
-      "monday": "Monday: Closed",
-      "tuesday": "Tuesday: 5:00 PM - 11:00 PM",
-      "wednesday": "Wednesday: 5:00 PM - 11:00 PM",
-      "thursday": "Thursday: 5:00 PM - 11:00 PM",
-      "friday": "Friday: 5:00 PM - 11:00 PM",
-      "saturday": "Saturday: 5:00 PM - 11:00 PM",
-      "sunday": "Sunday: 5:00 PM - 11:00 PM"
+      "open": "Tue – Sat: 5.00 pm – 1.00 am",
+      "kitchen_hours": "Kitchen Tue - Sat: 5.00 pm - 10.30 pm",
+      "closed": "Sun - Mon: Closed",
+      "summer": "Saturday, June - August: 11.30 am - 5.00 pm Terras Menu"
     },
     "specialHours": {
       "title": "Special Opening Hours 2025",

@@ -38,14 +38,7 @@
     "text_5": "Ab 20:00 Uhr sind keine zeitlichen Einschränkungen vorgesehen.",
     "text_6": "Ihr Team vom Goldenen Kalb",
     "text_7": "Sie werden über Ihre Reservierung per E-Mail informiert.",
-    "reservations": "Online Reservieren",
-    "opening_hours": {
-      "weekday_hours": "Di – Sa: 17.00 – 01.00 Uhr",
-      "saturday_hours": "Sa: 12.00 – 01.00 Uhr",
-      "kitchen_hours": "Küche Di - Sa: 17.00 - 22.30 Uhr",
-      "terrace_menu_hours": "Sa: 12.00 - 17.00 Uhr Terrassenkarte",
-      "closed_days": "So - Mo: Ruhetag"
-    }
+    "reservations": "Online Reservieren"
   },
   "menu": {
     "starters": "Vorspeisen",
@@ -77,14 +70,10 @@
   "openingHours": {
     "title": "Öffnungszeiten",
     "regularHours": {
-      "title": "Reguläre Öffnungszeiten",
-      "monday": "Montag: Geschlossen",
-      "tuesday": "Dienstag: 17:00 - 23:00",
-      "wednesday": "Mittwoch: 17:00 - 23:00",
-      "thursday": "Donnerstag: 17:00 - 23:00",
-      "friday": "Freitag: 17:00 - 23:00",
-      "saturday": "Samstag: 17:00 - 23:00",
-      "sunday": "Sonntag: 17:00 - 23:00"
+      "open": "Di – Sa: 17.00 – 01.00 Uhr",
+      "kitchen_hours": "Küche Di - Sa: 17.00 - 22.30 Uhr",
+      "closed": "So - Mo: Ruhetag",
+      "summer": "Samstag, Juni - August: 11.30 am - 5.00 pm Terras Menu"
     },
     "specialHours": {
       "title": "Besondere Öffnungszeiten 2025",

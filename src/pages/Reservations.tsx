@@ -47,16 +47,15 @@ export function Reservations() {
           <div className="flex-1 pt-10 lg:pt-0">
             <div className="flex flex-col justify-center items-center">
               <div className="font-serif text-gold-500 uppercase text-lg lg:text-xl">
-                {t("footer.opening_hours")}
+                {t("openingHours.title")}
               </div>
               <DividerWithLogo px={"px-0"} />
             </div>
             <div className="font-times flex flex-col items-center text-lg lg:text-xl">
-              <div>{t("footer.open_1")}</div>
-              {/*<div>{t("footer.open_2")}</div>*/}
-              <Spacer size="lg" />
-              <div>{t("book.opening_hours.kitchen_hours")}</div>
-              <div>{t("book.opening_hours.closed_days")}</div>
+              <div>{t("openingHours.regularHours.open")}</div>
+              <div>{t("openingHours.regularHours.kitchen_hours")}</div>
+              <div>{t("openingHours.regularHours.closed")}</div>
+              <div>{t("openingHours.regularHours.summer")}</div>
               <Spacer size="xl" />
               <div className="font-serif text-gold-500 uppercase text-lg lg:text-xl">
                 {t("openingHours.specialHours.title")}

@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { BlockHeader } from "../components/BlockHeader";
 import RotatingTextComponent from "../components/RoatatingText";
 import { useTranslation } from "react-i18next";
@@ -6,9 +5,10 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import Spacer from "../components/ui/Spacer";
 import { ReviewCarousel } from "@/components/ReviewCarousel";
 import { useMediaQuery } from "@react-hookz/web";
+import { useNavigateWithLang } from "../hooks/useNavigateWithLang";
 
 export function Main() {
-  const navigate = useNavigate();
+  const navigate = useNavigateWithLang();
   const { t } = useTranslation();
 
   const isMobile = useMediaQuery("(max-width: 640px)");

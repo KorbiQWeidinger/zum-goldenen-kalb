@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useNavigateWithLang } from "../hooks/useNavigateWithLang";
 
 export function Footer() {
-  const navigate = useNavigate();
+  const navigate = useNavigateWithLang();
   const { t } = useTranslation();
 
   return (
