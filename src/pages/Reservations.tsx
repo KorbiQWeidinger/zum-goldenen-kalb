@@ -51,15 +51,24 @@ export function Reservations() {
               </div>
               <DividerWithLogo px={"px-0"} />
             </div>
-            <div className="font-times flex flex-col items-center  text-lg lg:text-xl">
-              <div>{t("book.opening_hours.weekday_hours")}</div>
-              {/*<div>{t("book.opening_hours.saturday_hours")}</div>*/}
+            <div className="font-times flex flex-col items-center text-lg lg:text-xl">
+              <div>{t("footer.open_1")}</div>
+              {/*<div>{t("footer.open_2")}</div>*/}
               <Spacer size="lg" />
               <div>{t("book.opening_hours.kitchen_hours")}</div>
-              <Spacer size="lg" />
-              {/*<div>{t("book.opening_hours.terrace_menu_hours")}</div>*/}
               <div>{t("book.opening_hours.closed_days")}</div>
               <Spacer size="xl" />
+              <div className="font-serif text-gold-500 uppercase text-lg lg:text-xl">
+                {t("openingHours.specialHours.title")}
+              </div>
+              <DividerWithLogo px={"px-0"} />
+              <div className="text-base lg:text-lg">
+                <div>{t("openingHours.specialHours.carnivalParty")}</div>
+                <div>{t("openingHours.specialHours.bauma")}</div>
+                <div>{t("openingHours.specialHours.laborDay")}</div>
+                <div>{t("openingHours.specialHours.expo")}</div>
+                <div>{t("openingHours.specialHours.decemberMondays")}</div>
+              </div>
             </div>
           </div>
         </div>

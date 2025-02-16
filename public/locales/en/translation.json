@@ -1,11 +1,12 @@
 {
   "header": {
-    "home": "home",
+    "home": "Home",
     "about": "about us",
-    "menu": "menu",
-    "reservations": "reservation",
+    "menu": "Menu",
+    "reservations": "Reservations",
     "reifeschrank": "Dry Aging Cabinets",
-    "meats": "Meats"
+    "meats": "Meats",
+    "opening_hours": "Opening Hours"
   },
   "footer": {
     "opening_hours": "Opening hours",
@@ -72,5 +73,26 @@
     "silvana": "We stumbled upon this place by chance and everything impressed us! Super delicious steak and there was something for everyone in the meat selection. The service was attentive and very polite! We'll be back!",
     "lucas": "Beautiful ambiance at Viktualienmarkt! One of the best steak tartars in the city, that's all I had. Nice outdoor area.",
     "juli": "I've been to many steakhouses in Munich, but the steak here was worlds better! It's been a long time since I've had such a tender and juicy piece of beef."
+  },
+  "openingHours": {
+    "title": "Opening Hours",
+    "regularHours": {
+      "title": "Regular Opening Hours",
+      "monday": "Monday: Closed",
+      "tuesday": "Tuesday: 5:00 PM - 11:00 PM",
+      "wednesday": "Wednesday: 5:00 PM - 11:00 PM",
+      "thursday": "Thursday: 5:00 PM - 11:00 PM",
+      "friday": "Friday: 5:00 PM - 11:00 PM",
+      "saturday": "Saturday: 5:00 PM - 11:00 PM",
+      "sunday": "Sunday: 5:00 PM - 11:00 PM"
+    },
+    "specialHours": {
+      "title": "Special Opening Hours 2025",
+      "carnivalParty": "Carnival Tuesday (March 4): Join us for our Carnival Party! (Restaurant closed that day)",
+      "bauma": "Special opening on Monday, April 7th for BAUMA!",
+      "laborDay": "May 1: Closed (Labor Day)",
+      "expo": "Special opening on Sunday & Monday, October 5-6 for the EXPO!",
+      "decemberMondays": "We are open on Mondays in December! Closed Dec 24-26 for Christmas."
+    }
   }
 }

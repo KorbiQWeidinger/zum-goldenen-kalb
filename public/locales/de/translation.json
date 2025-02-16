@@ -2,10 +2,11 @@
   "header": {
     "home": "Home",
     "about": "Über uns",
-    "menu": "Menü",
-    "reservations": "Reservierung",
+    "menu": "Speisekarte",
+    "reservations": "Reservierungen",
     "reifeschrank": "Reifeschrank",
-    "meats": "Fleisch"
+    "meats": "Fleisch",
+    "opening_hours": "Öffnungszeiten"
   },
   "footer": {
     "opening_hours": "Öffnungszeiten",
@@ -72,5 +73,26 @@
     "silvana": "Aus Zufall reingeschaut und alles hat uns überzeugt! Super leckeres Steak und bei der Fleisch Auswahl war für jeden was dabei. Der Service war zuvorkommend und sehr höflich! Wir kommen wieder!",
     "lucas": "Schönes Ambiente am Viktualienmarkt! Eines der besten Steak Tartars der Stadt, mehr hatte ich nicht. Schöner Außenbereich",
     "juli": "Ich war jetzt schon in vielen Steakhouses in München, aber das Steak hier war um Welten besser! Ich habe wirklich lange nicht mehr so eine weiche und saftige Kuh essen dürfen."
+  },
+  "openingHours": {
+    "title": "Öffnungszeiten",
+    "regularHours": {
+      "title": "Reguläre Öffnungszeiten",
+      "monday": "Montag: Geschlossen",
+      "tuesday": "Dienstag: 17:00 - 23:00",
+      "wednesday": "Mittwoch: 17:00 - 23:00",
+      "thursday": "Donnerstag: 17:00 - 23:00",
+      "friday": "Freitag: 17:00 - 23:00",
+      "saturday": "Samstag: 17:00 - 23:00",
+      "sunday": "Sonntag: 17:00 - 23:00"
+    },
+    "specialHours": {
+      "title": "Besondere Öffnungszeiten 2025",
+      "carnivalParty": "Faschingsdienstag (04.03.): Feiern Sie mit uns Fasching! (Restaurant an diesem Tag geschlossen)",
+      "bauma": "Sonderöffnung am Montag, dem 7. April zur BAUMA!",
+      "laborDay": "01.05.: Geschlossen (Tag der Arbeit)",
+      "expo": "Sonderöffnung am Sonntag & Montag, 5.-6. Oktober zur EXPO!",
+      "decemberMondays": "Wir haben im Dezember montags geöffnet! Geschlossen vom 24.-26. Dezember."
+    }
   }
 }

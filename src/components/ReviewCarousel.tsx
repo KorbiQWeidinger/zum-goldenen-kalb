@@ -5,6 +5,8 @@ import { t } from "i18next";
 import { DividerWithLogo } from "./BlockHeader";
 import Spacer from "./ui/Spacer";
 import Marquee from "@/components/ui/marquee";
+import { useBreakpoint } from "../hooks/useBreakpoint";
+import { TABLET } from "../constants/breakpoints";
 
 type Review = {
   id: number;
@@ -152,24 +154,20 @@ export function ReviewCarousel() {
     },
   ];
 
+  const isTablet = useBreakpoint(TABLET);
+
   return (
     <div className="w-full mx-auto py-8 relative">
-      {window.innerWidth <= 1024 && (
+      {isTablet && (
         <>
           <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black via-black to-transparent z-10 pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black via-black to-transparent z-10 pointer-events-none"></div>
         </>
       )}
       <Marquee
-        className={`w-full ${
-          window.innerWidth <= 640
-            ? "max-h-[80vh] flex justify-center items-center"
-            : window.innerWidth <= 1024
-            ? "max-h-[60vh] flex justify-center items-center"
-            : ""
-        }`}
+        className="w-full max-h-[100vh] md:max-h-[60vh] flex justify-center items-center"
         repeat={6}
-        vertical={window.innerWidth <= 1024}
+        vertical={isTablet}
       >
         {reviews.map((review) => (
           <div key={review.id} className="p-1">
