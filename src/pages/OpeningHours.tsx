@@ -37,6 +37,9 @@ export function OpeningHours() {
             </p>
             <p className="mb-2">{t("openingHours.specialHours.bauma")}</p>
             <p className="mb-2">{t("openingHours.specialHours.laborDay")}</p>
+            <p className="mb-2">
+              {t("openingHours.specialHours.logisticExpo")}
+            </p>
             <p className="mb-2">{t("openingHours.specialHours.expo")}</p>
             <p className="mb-2">
               {t("openingHours.specialHours.decemberMondays")}

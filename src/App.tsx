@@ -10,6 +10,7 @@ import GoogleAnalytics from "./components/GoogleAnalytics";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { Page } from "./components/layout/Page";
 import { OpeningHours } from "./pages/OpeningHours";
+import { AGB } from "./pages/AGB";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/opening-hours" element={<OpeningHours />} />
               <Route path="/dry-aging-cabinet" element={<DryAgingCabinet />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/agb" element={<AGB />} />
             </Routes>
           </Page>
         </ScrollToTop>

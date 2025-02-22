@@ -70,17 +70,18 @@
   "openingHours": {
     "title": "Öffnungszeiten",
     "regularHours": {
-      "open": "Di – Sa: 17.00 – 01.00 Uhr",
-      "kitchen_hours": "Küche Di - Sa: 17.00 - 22.30 Uhr",
+      "open": "Di – Sa: 17:00 – 01:00 Uhr",
+      "kitchen_hours": "Küche Di - Sa: 17:00 - 22:30 Uhr",
       "closed": "So - Mo: Ruhetag",
-      "summer": "Samstag, Juni - August: 11.30 am - 5.00 pm Terras Menu"
+      "summer": "Samstag, Juni - August: 11:30 - 17:00 Uhr Terrassenspeisekarte"
     },
     "specialHours": {
       "title": "Besondere Öffnungszeiten 2025",
       "carnivalParty": "Faschingsdienstag (04.03.): Feiern Sie mit uns Fasching! (Restaurant an diesem Tag geschlossen)",
       "bauma": "Sonderöffnung am Montag, dem 7. April zur BAUMA!",
       "laborDay": "01.05.: Geschlossen (Tag der Arbeit)",
-      "expo": "Sonderöffnung am Sonntag & Montag, 5.-6. Oktober zur EXPO!",
+      "logisticExpo": "Sonderöffnung Montag, 02.06. zur Leitmesse für Logistik!",
+      "expo": "Sonderöffnung am Sonntag & Montag, 5.-6. Oktober zur EXPO REAL!",
       "decemberMondays": "Wir haben im Dezember montags geöffnet! Geschlossen vom 24.-26. Dezember."
     }
   }

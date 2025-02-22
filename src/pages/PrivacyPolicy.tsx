@@ -1,11 +1,18 @@
 import { BlockHeader } from "../components/BlockHeader";
 import Spacer from "../components/ui/Spacer";
+import { ParallaxBanner } from "react-scroll-parallax";
 
 export function PrivacyPolicy() {
   return (
     <>
-      <div className="bg-black text-white py-32 md:py-24 px-4 md:px-16 text-center">
+      <ParallaxBanner
+        layers={[{ image: "/kalb-bg-worldmap.jpg", speed: -25 }]}
+        className="relative bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
+      >
         <BlockHeader label="Datenschutzerklärung" header="DATENSCHUTZ" />
+        <div className="absolute inset-0 bg-black opacity-50 z-10" />
+      </ParallaxBanner>
+      <div className="bg-black text-white py-32 md:py-24 px-4 md:px-16 text-center">
         <Spacer size="lg" />
         <div className="text-left max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold mb-4">1. Verantwortlicher</h2>
