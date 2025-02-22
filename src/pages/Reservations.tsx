@@ -65,6 +65,7 @@ export function Reservations() {
                 <div>{t("openingHours.specialHours.carnivalParty")}</div>
                 <div>{t("openingHours.specialHours.bauma")}</div>
                 <div>{t("openingHours.specialHours.laborDay")}</div>
+                <div>{t("openingHours.specialHours.logisticExpo")}</div>
                 <div>{t("openingHours.specialHours.expo")}</div>
                 <div>{t("openingHours.specialHours.decemberMondays")}</div>
               </div>
