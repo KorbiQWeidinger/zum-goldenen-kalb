@@ -38,7 +38,9 @@
     "text_5": "There are no time restrictions after 20:00.",
     "text_6": "Your team Zum Goldenen Kalb",
     "text_7": "We send you a confirmation e-mail.",
-    "reservations": "Online Reservations"
+    "reservations": "Online Reservations",
+    "your_request": "Your Request",
+    "reserve": "Reserve"
   },
   "menu": {
     "starters": "Starters",

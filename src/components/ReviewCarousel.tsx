@@ -6,7 +6,6 @@ import { DividerWithLogo } from "./BlockHeader";
 import Spacer from "./ui/Spacer";
 import Marquee from "@/components/ui/marquee";
 import { useBreakpoint } from "../hooks/useBreakpoint";
-import { TABLET } from "../constants/breakpoints";
 
 type Review = {
   id: number;
@@ -154,7 +153,7 @@ export function ReviewCarousel() {
     },
   ];
 
-  const isTablet = useBreakpoint(TABLET);
+  const isTablet = useBreakpoint("tablet");
 
   return (
     <div className="w-full mx-auto py-8 relative">

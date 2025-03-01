@@ -1,13 +1,12 @@
 import { useState, useCallback, useEffect } from "react";
 import { useBreakpoint } from "../../hooks/useBreakpoint";
-import { TABLET } from "../../constants/breakpoints";
 import { MobileHeader } from "./MobileHeader";
 import { DesktopHeader } from "./DesktopHeader";
 
 const Header = () => {
   const [headerState, setHeaderState] = useState({ show: true, dark: false });
   const [lastScrollY, setLastScrollY] = useState(0);
-  const isTablet = useBreakpoint(TABLET);
+  const isTablet = useBreakpoint("desktopSmall");
 
   const handleScroll = useCallback(() => {
     const currentScrollY = window.scrollY;
