@@ -108,7 +108,7 @@ const SteakTypeColumn = ({
   );
 };
 
-export function Menu() {
+export function OldMenu() {
   const { t, i18n } = useTranslation();
 
   return (
@@ -233,6 +233,41 @@ export function Menu() {
           <div className="flex-1">{t("menu.warmCitchen")}</div>
           <div className="flex-1">{t("menu.dessertUntil")}</div>
         </div>
+      </div>
+    </>
+  );
+}
+
+export function Menu() {
+  const { t, i18n } = useTranslation();
+
+  return (
+    <>
+      <ParallaxBanner
+        layers={[{ image: "/meats_2.jpg", speed: -25 }]}
+        className="relative flex flex-col items-center justify-center w-screen min-w-screen pt-72 pb-44 px-4 md:px-16 text-center"
+      >
+        <div className="absolute inset-0 bg-black opacity-50 z-10" />
+        <BlockHeader label={"Steak & Entourage"} header={t("home.title_1")} />
+      </ParallaxBanner>
+      <div className="bg-black text-white pt-14 pb-28 px-4 md:px-16 text-center ">
+        <button
+          onClick={() =>
+            window.open(
+              i18n.language === "de"
+                ? "/menu_spring_2025_de.pdf"
+                : "/menu_spring_2025_eng.pdf",
+              "_blank"
+            )
+          }
+          className="bg-gold-500 text-white text-xl uppercase font-serif rounded-sm my-6 py-3 px-6 transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
+        >
+          <div className="flex justify-center items-center">
+            {t("menu.menu_spring_2025")}
+          </div>
+        </button>
+        <Spacer size="xl" />
+        <DryAgedSteaksDisclaimer />
       </div>
     </>
   );
