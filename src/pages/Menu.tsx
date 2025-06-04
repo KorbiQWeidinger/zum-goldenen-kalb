@@ -255,15 +255,15 @@ export function Menu() {
           onClick={() =>
             window.open(
               i18n.language === "de"
-                ? "/menu_spring_2025_de.pdf"
-                : "/menu_spring_2025_eng.pdf",
+                ? "/menu_de_summer_2025.pdf"
+                : "/menu_en_summer_2025.pdf",
               "_blank"
             )
           }
           className="bg-gold-500 text-white text-xl uppercase font-serif rounded-sm my-6 py-3 px-6 transform transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
         >
           <div className="flex justify-center items-center">
-            {t("menu.menu_spring_2025")}
+            {t("menu.menu_summer_2025")}
           </div>
         </button>
         <Spacer size="xl" />
